@@ -1,0 +1,49 @@
+<!--
+ Generated with g9.
+-->
+<ace:dialog xmlns:h="http://java.sun.com/jsf/html"
+            xmlns:ace="http://www.icefaces.org/icefaces/components"
+            draggable="true" modal="true" visible="#{zwayapp.showMessage}"
+            onShow="ice.applyFocus('iceform:#{zwayapp.messageBoxFocusButton}_span-button');"
+            header="#{zwayapp.messageBoxTitle}" resizable="false" >
+
+  <ace:ajax event="close" listener="#{zwayapp.messageBox_CloseClicked}" />
+
+  <!-- The icon, message text and reply text -->
+  <h:panelGrid columns="2">
+    <h:graphicImage value="#{zwayapp.messageBoxIcon}" alt="#{zwayapp.messageBoxAltText}"/>
+    <h:panelGroup >
+      <h:outputText value="#{zwayapp.messageText}" />
+      <h:panelGroup layout="block" styleClass="clearer"/>
+      <h:inputText id="messageBox_input" value="#{zwayapp.messageInput}" rendered="#{zwayapp.showMessageInput}" />
+    </h:panelGroup>
+  </h:panelGrid>
+
+  <!-- The buttons -->
+  <div align="center">
+    <h:panelGrid columns="7">
+      <ace:pushButton id="messageBox_ok" actionListener="#{zwayapp.messageBox_OkClicked}" rendered="#{zwayapp.showMessageOkButton}" >
+        <h:outputText value="#{zwayapp.msg('zwayapp.ok.title')}" />
+      </ace:pushButton>
+      <ace:pushButton id="messageBox_yes" actionListener="#{zwayapp.messageBox_YesClicked}" rendered="#{zwayapp.showMessageYesButton}" >
+        <h:outputText value="#{zwayapp.msg('zwayapp.yes.title')}" />
+      </ace:pushButton>
+      <ace:pushButton id="messageBox_no" actionListener="#{zwayapp.messageBox_NoClicked}" rendered="#{zwayapp.showMessageNoButton}" >
+        <h:outputText value="#{zwayapp.msg('zwayapp.no.title')}" />
+      </ace:pushButton>
+      <ace:pushButton id="messageBox_cancel" actionListener="#{zwayapp.messageBox_CancelClicked}" rendered="#{zwayapp.showMessageCancelButton}" >
+        <h:outputText value="#{zwayapp.msg('zwayapp.cancel.title')}" />
+      </ace:pushButton>
+      <ace:pushButton id="messageBox_abort" actionListener="#{zwayapp.messageBox_AbortClicked}" rendered="#{zwayapp.showMessageAbortButton}" >
+        <h:outputText value="#{zwayapp.msg('zwayapp.abort.title')}" />
+      </ace:pushButton>
+      <ace:pushButton id="messageBox_retry" actionListener="#{zwayapp.messageBox_RetryClicked}" rendered="#{zwayapp.showMessageRetryButton}" >
+        <h:outputText value="#{zwayapp.msg('zwayapp.retry.title')}" />
+      </ace:pushButton>
+      <ace:pushButton id="messageBox_ignore" actionListener="#{zwayapp.messageBox_IgnoreClicked}" rendered="#{zwayapp.showMessageIgnoreButton}" >
+        <h:outputText value="#{zwayapp.msg('zwayapp.ignore.title')}" />
+      </ace:pushButton>
+    </h:panelGrid>
+  </div>
+
+</ace:dialog>

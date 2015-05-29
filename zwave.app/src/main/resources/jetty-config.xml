@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE Configure PUBLIC "-//Jetty//Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+<!--
+ Generated with g9.
+-->
+<!-- =============================================================== -->
+<!-- Configure the Jetty Server                                      -->
+<!--                                                                 -->
+<!-- Remove the comments for httpConfig and the factories argument   -->
+<!-- if you want to change the default configuration values.         -->
+<!-- =============================================================== -->
+<Configure id="Server" class="org.eclipse.jetty.server.Server">
+
+<!--
+    <New id="httpConfig" class="org.eclipse.jetty.server.HttpConfiguration">
+        <Set name="secureScheme">https</Set>
+        <Set name="securePort"><Property name="jetty.secure.port" default="8443" /></Set>
+        <Set name="outputBufferSize">32768</Set>
+        <Set name="requestHeaderSize">8192</Set>
+        <Set name="responseHeaderSize">8192</Set>
+        <Set name="sendServerVersion">true</Set>
+        <Set name="sendDateHeader">false</Set>
+        <Set name="headerCacheSize">512</Set>
+    </New>
+-->
+
+    <Call name="addConnector">
+        <Arg>
+            <New class="org.eclipse.jetty.server.ServerConnector">
+                <Arg name="server"><Ref refid="Server" /></Arg>
+<!--
+                <Arg name="factories">
+                    <Array type="org.eclipse.jetty.server.ConnectionFactory">
+                        <Item>
+                            <New class="org.eclipse.jetty.server.HttpConnectionFactory">
+                                <Arg name="config"><Ref refid="httpConfig" /></Arg>
+                            </New>
+                        </Item>
+                    </Array>
+                </Arg>
+-->
+                <Set name="port"><Property name="jetty.port" default="8080" /></Set>
+            </New>
+        </Arg>
+    </Call>
+
+    <Set name="handler">
+        <New class="no.g9.support.jetty.AliasEnhancedWebAppContext">
+            <Set name="contextPath">/zwayapp</Set>
+            <Set name="baseResource">
+                <New class="org.eclipse.jetty.util.resource.ResourceCollection">
+                    <Arg>
+                        <Array type="java.lang.String">
+                            <Item>src/main/webapp/</Item>
+                            <Item>target</Item>
+                        </Array>
+                    </Arg>
+                </New>
+            </Set>
+            <Set name="resourceAliases">
+                <Map>
+                    <Entry>
+                        <Item>/WEB-INF/classes/</Item>
+                        <Item>/classes/</Item>
+                    </Entry>
+                </Map>
+            </Set>
+        </New>
+    </Set>
+
+</Configure>

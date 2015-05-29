@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<!--
+ Generated with g9.
+-->
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:ace="http://www.icefaces.org/icefaces/components"
+      xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+  <f:view contentType="text/html" locale="en">
+
+    <h:head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      <title>#{zwayapp.msg('zwayapp.title')}</title>
+    </h:head>
+
+    <h:body>
+      <h:outputScript name="gva.ace.locales.js" library="js" target="body"></h:outputScript>
+
+      <ui:include src="/WEB-INF/includes/common/header.xhtml" />
+
+      <div class="body_container">
+
+        <div class="body_content">
+
+          <h:form id="iceform">
+
+            <ace:ajax execute="@this" render="@all" >
+            <f:ajax execute="@this" render="@all" >
+
+              <div class="navigation_container">
+                <ui:include src="/WEB-INF/includes/common/navigation.xhtml" />
+              </div>
+
+              <div class="content_container">
+                <h:messages layout="table" showDetail="true" errorClass="gvaErrorMessage" />
+                <ui:insert name="page-content"/>
+                <c:forEach var="i" begin="0" end="${zwayapp.numberOfOpenDialogBoxes}">
+                  <ui:include src="${zwayapp.dialogBoxIncludePaths[i]}" />
+                </c:forEach>
+                <ui:include src="/WEB-INF/includes/common/messagebox.xhtml"/>
+              </div>
+
+              <ui:include src="/WEB-INF/includes/common/dirtydialogs.xhtml" />
+
+            </f:ajax>
+            </ace:ajax>
+
+          </h:form>
+        </div>
+      </div>
+      <ui:include src="/WEB-INF/includes/common/footer.xhtml"/>
+    </h:body>
+    <h:outputStylesheet library="stylesheets" name="ZwayApp_style.css" />
+    <h:outputStylesheet library="stylesheets" name="ZwayApp_overrides.css" />
+  </f:view>
+  <script type="text/javascript">
+    window.onbeforeunload = confirmExit;
+
+    function confirmExit() {
+      if (document.getElementById('iceform:_dirtyDialogs').value == "true") {
+          return "Unsaved data will be lost.";
+      }
+    }
+  </script>
+</html>

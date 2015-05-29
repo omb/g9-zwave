@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+ Generated with g9.
+-->
+<faces-config xmlns="http://java.sun.com/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_2_0.xsd"
+              version="2.0"
+              metadata-complete="false">
+
+  <managed-bean>
+    <description>
+      Backing bean for the ZwayApp application
+    </description>
+    <managed-bean-name>zwayapp</managed-bean-name>
+    <managed-bean-class>zwave.faces.ZwayAppBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+  </managed-bean>
+
+  <managed-bean>
+    <description>
+      Backing bean for the ApplicationWindow dialog
+    </description>
+    <managed-bean-name>applicationwindow</managed-bean-name>
+    <managed-bean-class>zwave.faces.applicationwindow.ApplicationWindowBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+    <managed-property>
+      <property-name>applicationBean</property-name>
+      <value>#{zwayapp}</value>
+    </managed-property>
+    <managed-property>
+      <property-name>dialogInstanceNumber</property-name>
+      <value>1</value>
+    </managed-property>
+  </managed-bean>
+
+  <managed-bean>
+    <description>
+      Backing bean for the DeviceDetail_dia dialog
+    </description>
+    <managed-bean-name>devicedetail_dia</managed-bean-name>
+    <managed-bean-class>zwave.faces.devicedetail_dia.DeviceDetail_diaBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+    <managed-property>
+      <property-name>applicationBean</property-name>
+      <value>#{zwayapp}</value>
+    </managed-property>
+    <managed-property>
+      <property-name>dialogInstanceNumber</property-name>
+      <value>1</value>
+    </managed-property>
+  </managed-bean>
+
+  <managed-bean>
+    <description>
+      Backing bean for the Devices_dia dialog
+    </description>
+    <managed-bean-name>devices_dia</managed-bean-name>
+    <managed-bean-class>zwave.faces.devices_dia.Devices_diaBean</managed-bean-class>
+    <managed-bean-scope>session</managed-bean-scope>
+    <managed-property>
+      <property-name>applicationBean</property-name>
+      <value>#{zwayapp}</value>
+    </managed-property>
+    <managed-property>
+      <property-name>dialogInstanceNumber</property-name>
+      <value>1</value>
+    </managed-property>
+  </managed-bean>
+
+</faces-config>

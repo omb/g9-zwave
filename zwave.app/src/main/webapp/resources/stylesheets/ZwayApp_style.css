@@ -1,0 +1,892 @@
+/*---------------------------------------------------------------------*/
+/* Generated with g9. */
+/*---------------------------------------------------------------------*/
+.BlackOnInheritedNoFrame, .BlackOnInheritedNoFrame_color, .BlackOnInheritedNoFrameInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.BlackOnInheritedNoFrame, .BlackOnInheritedNoFrame_font, .BlackOnInheritedNoFrameInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.BlackOnInheritedNoFrame_frame {
+    border-style: none;
+}
+.BlackOnLightGreyBold, .BlackOnLightGreyBold_color, .BlackOnLightGreyBoldInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(238, 238, 238, 1.00);
+}
+.BlackOnLightGreyBold, .BlackOnLightGreyBold_font, .BlackOnLightGreyBoldInput {
+    font-family: "MS Sans Serif";
+    font-size: 8pt;
+    font-weight: bold;
+    font-style: normal;
+}
+.BlackOnLightGreyEtched, .BlackOnLightGreyEtched_color, .BlackOnLightGreyEtchedInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(238, 238, 238, 1.00);
+}
+.BlackOnLightGreyEtched, .BlackOnLightGreyEtched_font, .BlackOnLightGreyEtchedInput {
+    font-family: "MS Sans Serif";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.BlackOnLightGreyNoFrame, .BlackOnLightGreyNoFrame_color, .BlackOnLightGreyNoFrameInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(238, 238, 238, 1.00);
+}
+.BlackOnLightGreyNoFrame, .BlackOnLightGreyNoFrame_font, .BlackOnLightGreyNoFrameInput {
+    font-family: "MS Sans Serif";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.BlackOnLightGreyNoFrame_frame {
+    border-style: none;
+}
+.BlackOnLightGreyShadowIn, .BlackOnLightGreyShadowIn_color, .BlackOnLightGreyShadowInInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(238, 238, 238, 1.00);
+}
+.BlackOnLightGreyShadowIn, .BlackOnLightGreyShadowIn_font, .BlackOnLightGreyShadowInInput {
+    font-family: "MS Sans Serif";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.BlackOnSystemNoFrame, .BlackOnSystemNoFrame_color, .BlackOnSystemNoFrameInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.BlackOnSystemNoFrame, .BlackOnSystemNoFrame_font, .BlackOnSystemNoFrameInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.BlackOnSystemNoFrame_frame {
+    border-style: none;
+}
+.BlackOnTransparentBold, .BlackOnTransparentBold_color, .BlackOnTransparentBoldInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.BlackOnTransparentBold, .BlackOnTransparentBold_font, .BlackOnTransparentBoldInput {
+    font-family: "Arial";
+    font-size: 14pt;
+    font-weight: bold;
+    font-style: normal;
+}
+.BlackOnTransparentEtched, .BlackOnTransparentEtched_color, .BlackOnTransparentEtchedInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.BlackOnTransparentEtched, .BlackOnTransparentEtched_font, .BlackOnTransparentEtchedInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.BlackOnTransparentEtchedFixed, .BlackOnTransparentEtchedFixed_color, .BlackOnTransparentEtchedFixedInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.BlackOnTransparentEtchedFixed, .BlackOnTransparentEtchedFixed_font, .BlackOnTransparentEtchedFixedInput {
+    font-family: "Courier New";
+    font-size: 13pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.BlackOnTransparentNoFrame, .BlackOnTransparentNoFrame_color, .BlackOnTransparentNoFrameInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.BlackOnTransparentNoFrame, .BlackOnTransparentNoFrame_font, .BlackOnTransparentNoFrameInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.BlackOnTransparentNoFrame_frame {
+    border-style: none;
+}
+.BlackOnTransparentShadowIn, .BlackOnTransparentShadowIn_color, .BlackOnTransparentShadowInInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.BlackOnTransparentShadowIn, .BlackOnTransparentShadowIn_font, .BlackOnTransparentShadowInInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.BlackOnTransparentShadowInBold, .BlackOnTransparentShadowInBold_color, .BlackOnTransparentShadowInBoldInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.BlackOnTransparentShadowInBold, .BlackOnTransparentShadowInBold_font, .BlackOnTransparentShadowInBoldInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: bold;
+    font-style: normal;
+}
+.BlackOnWhiteNoFrame, .BlackOnWhiteNoFrame_color, .BlackOnWhiteNoFrameInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(255, 255, 255, 1.00);
+}
+.BlackOnWhiteNoFrame, .BlackOnWhiteNoFrame_font, .BlackOnWhiteNoFrameInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.BlackOnWhiteNoFrame_frame {
+    border-style: none;
+}
+.BlackOnYellowNoFrame, .BlackOnYellowNoFrame_color, .BlackOnYellowNoFrameInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(255, 255, 184, 1.00);
+}
+.BlackOnYellowNoFrame, .BlackOnYellowNoFrame_font, .BlackOnYellowNoFrameInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.BlackOnYellowNoFrame_frame {
+    border-style: none;
+}
+.DisplayOnlyField, .DisplayOnlyField_color, .DisplayOnlyFieldInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(191, 191, 191, 1.00);
+}
+.DisplayOnlyField, .DisplayOnlyField_font, .DisplayOnlyFieldInput {
+    font-family: "MS Sans Serif";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.EditFields, .EditFields_color, .EditFieldsInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.EditFields, .EditFields_font, .EditFieldsInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.EditFields_frame {
+    border-style: none;
+}
+.FieldAlert, .FieldAlert_color, .FieldAlertInput {
+    color: rgba(220, 0, 0, 1.00);
+    background-color: rgba(255, 255, 255, 1.00);
+}
+.FieldAlert, .FieldAlert_font, .FieldAlertInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.ImageEtched, .ImageEtched_color, .ImageEtchedInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.ImageEtched, .ImageEtched_font, .ImageEtchedInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.ImageNoFrame, .ImageNoFrame_color, .ImageNoFrameInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.ImageNoFrame, .ImageNoFrame_font, .ImageNoFrameInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.ImageNoFrame_frame {
+    border-style: none;
+}
+.LogoOnTransparent, .LogoOnTransparent_color, .LogoOnTransparentInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.LogoOnTransparent, .LogoOnTransparent_font, .LogoOnTransparentInput {
+    font-family: "Bauhaus 93";
+    font-size: 28pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.LogoOnTransparent_frame {
+    border-style: none;
+}
+.MandatoryField, .MandatoryField_color, .MandatoryFieldInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(255, 255, 184, 1.00);
+}
+.MandatoryField, .MandatoryField_font, .MandatoryFieldInput {
+    font-family: "MS Sans Serif";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.SeparatorBand, .SeparatorBand_color, .SeparatorBandInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(222, 222, 255, 1.00);
+}
+.SeparatorBand, .SeparatorBand_font, .SeparatorBandInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: bold;
+    font-style: normal;
+}
+.SeparatorBand_frame {
+    border-style: none;
+}
+.StandardEtchedIn, .StandardEtchedIn_color, .StandardEtchedInInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.StandardEtchedIn, .StandardEtchedIn_font, .StandardEtchedInInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.StandardNoFrame, .StandardNoFrame_color, .StandardNoFrameInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.StandardNoFrame, .StandardNoFrame_font, .StandardNoFrameInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.StandardNoFrame_frame {
+    border-style: none;
+}
+.StandardShadowIn, .StandardShadowIn_color, .StandardShadowInInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.StandardShadowIn, .StandardShadowIn_font, .StandardShadowInInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.Table, .Table_color, .TableInput {
+    color: rgba(191, 191, 191, 1.00);
+    background-color: rgba(255, 255, 255, 1.00);
+}
+.Table, .Table_font, .TableInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.Table_frame {
+    border-style: none;
+}
+.TableHeader, .TableHeader_color, .TableHeaderInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(222, 222, 222, 1.00);
+}
+.TableHeader, .TableHeader_font, .TableHeaderInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.TableHeader_frame {
+    border-style: none;
+}
+.TransparentOnTransparentNoFrame, .TransparentOnTransparentNoFrame_color, .TransparentOnTransparentNoFrameInput {
+    color: inherit;
+    background-color: inherit;
+}
+.TransparentOnTransparentNoFrame, .TransparentOnTransparentNoFrame_font, .TransparentOnTransparentNoFrameInput {
+    font-family: "MS Sans Serif";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.TransparentOnTransparentNoFrame_frame {
+    border-style: none;
+}
+.WebLink, .WebLink_color, .WebLinkInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(255, 255, 255, 1.00);
+}
+.WebLink, .WebLink_font, .WebLinkInput {
+    font-family: "Arial";
+    font-size: 10pt;
+    font-weight: bold;
+    font-style: normal;
+}
+.WebLink_frame {
+    border-style: none;
+}
+.WebSmallText, .WebSmallText_color, .WebSmallTextInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(255, 255, 255, 1.00);
+}
+.WebSmallText, .WebSmallText_font, .WebSmallTextInput {
+    font-family: "Arial";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.WebSmallText_frame {
+    border-style: none;
+}
+.WebSmallTextTransparentBold, .WebSmallTextTransparentBold_color, .WebSmallTextTransparentBoldInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: inherit;
+}
+.WebSmallTextTransparentBold, .WebSmallTextTransparentBold_font, .WebSmallTextTransparentBoldInput {
+    font-family: "Arial";
+    font-size: 8pt;
+    font-weight: bold;
+    font-style: normal;
+}
+.WebSmallTextTransparentBold_frame {
+    border-style: none;
+}
+.WebText, .WebText_color, .WebTextInput {
+    color: rgba(0, 0, 0, 1.00);
+    background-color: rgba(255, 255, 255, 1.00);
+}
+.WebText, .WebText_font, .WebTextInput {
+    font-family: "Arial";
+    font-size: 10pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.WebText_frame {
+    border-style: none;
+}
+.WindowNoFrame, .WindowNoFrame_color, .WindowNoFrameInput {
+    color: rgba(0, 0, 0, 1.00);
+}
+.WindowNoFrame, .WindowNoFrame_font, .WindowNoFrameInput {
+    font-family: "Tahoma";
+    font-size: 8pt;
+    font-weight: normal;
+    font-style: normal;
+}
+.WindowNoFrame_frame {
+    border-style: none;
+}
+.Clear {
+    background-image: url("#{resource['images/newSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.ClearL {
+    background-image: url("#{resource['images/newLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Close {
+    background-image: url("#{resource['images/close.png']}");
+    height: 21px;
+    width: 21px;
+}
+.Copy {
+    background-image: url("#{resource['images/copySmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.CopyL {
+    background-image: url("#{resource['images/copyLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Cut {
+    background-image: url("#{resource['images/cutSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.CutL {
+    background-image: url("#{resource['images/cutLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Delete {
+    background-image: url("#{resource['images/deleteSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.DeleteL {
+    background-image: url("#{resource['images/deleteLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Error {
+    background-image: url("#{resource['images/error.png']}");
+    height: 48px;
+    width: 48px;
+}
+.Esito {
+    background-image: url("#{resource['images/esitoLogo.gif']}");
+    height: 54px;
+    width: 121px;
+}
+.EsitoOrange {
+    background-image: url("#{resource['images/esitoLogoColor.gif']}");
+    height: 57px;
+    width: 121px;
+}
+.FindAll {
+    background-image: url("#{resource['images/findSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.FindAllL {
+    background-image: url("#{resource['images/findLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.First {
+    background-image: url("#{resource['images/firstSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.FirstL {
+    background-image: url("#{resource['images/firstLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.g9 {
+    background-image: url("#{resource['images/g9-32.gif']}");
+    height: 32px;
+    width: 32px;
+}
+.g9Icon {
+    background-image: url("#{resource['images/g9-16.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.Help {
+    background-image: url("#{resource['images/helpSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.HelpL {
+    background-image: url("#{resource['images/helpLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Info {
+    background-image: url("#{resource['images/info.png']}");
+    height: 48px;
+    width: 48px;
+}
+.Insert {
+    background-image: url("#{resource['images/saveSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.InsertL {
+    background-image: url("#{resource['images/saveLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Last {
+    background-image: url("#{resource['images/lastSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.LastL {
+    background-image: url("#{resource['images/lastLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.More {
+    background-image: url("#{resource['images/moreSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.MoreL {
+    background-image: url("#{resource['images/moreLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.New {
+    background-image: url("#{resource['images/newSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.NewL {
+    background-image: url("#{resource['images/newLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Next {
+    background-image: url("#{resource['images/nextSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.NextL {
+    background-image: url("#{resource['images/nextLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Open {
+    background-image: url("#{resource['images/openSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.OpenL {
+    background-image: url("#{resource['images/openLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Paste {
+    background-image: url("#{resource['images/pasteSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.PasteL {
+    background-image: url("#{resource['images/pasteLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Preview {
+    background-image: url("#{resource['images/previewSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.PreviewL {
+    background-image: url("#{resource['images/previewLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Previous {
+    background-image: url("#{resource['images/previousSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.PreviousL {
+    background-image: url("#{resource['images/previousLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Print {
+    background-image: url("#{resource['images/printSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.PrintL {
+    background-image: url("#{resource['images/printLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Question {
+    background-image: url("#{resource['images/question.png']}");
+    height: 48px;
+    width: 48px;
+}
+.Save {
+    background-image: url("#{resource['images/saveSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.SaveL {
+    background-image: url("#{resource['images/saveLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Undo {
+    background-image: url("#{resource['images/undoSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.UndoL {
+    background-image: url("#{resource['images/undoLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Update {
+    background-image: url("#{resource['images/saveSmall.gif']}");
+    height: 16px;
+    width: 16px;
+}
+.UpdateL {
+    background-image: url("#{resource['images/saveLarge.gif']}");
+    height: 24px;
+    width: 24px;
+}
+.Warning {
+    background-image: url("#{resource['images/warning.png']}");
+    height: 48px;
+    width: 48px;
+}
+div.clearer {
+    clear: both;
+	height: 0px;
+    visibility: hidden;
+    line-height: .01em;
+	padding: 0;
+	margin: 0;
+}
+.gvaEtchedBorder {
+    border-style: groove;
+}
+.gvaEtchedBorderTopLeft {
+    border-top-style: groove;
+    border-left-style: groove;
+}
+.gvaEtchedBorderTop {
+    border-top-style: groove;
+}
+.gvaEtchedBorderTopRight {
+    border-top-style: groove;
+    border-right-style: groove;
+}
+.gvaEtchedBorderLeft {
+    border-left-style: groove;
+}
+.gvaEtchedBorderRight {
+    border-right-style: groove;
+}
+.gvaEtchedBorderBottomLeft {
+    border-bottom-style: groove;
+    border-left-style: groove;
+}
+.gvaEtchedBorderBottom {
+    border-bottom-style: groove;
+}
+.gvaEtchedBorderBottomRight {
+    border-bottom-style: groove;
+    border-right-style: groove;
+}
+.gvaEtchedBorder,
+.gvaEtchedBorderTopLeft,
+.gvaEtchedBorderTop,
+.gvaEtchedBorderTopRight,
+.gvaEtchedBorderLeft,
+.gvaEtchedBorderRight,
+.gvaEtchedBorderBottomLeft,
+.gvaEtchedBorderBottom,
+.gvaEtchedBorderBottomRight {
+    border-width: thin;
+    border-color: #ABABAB;
+}
+.gvaShadowBorder {
+    border-style: inset;
+}
+.gvaShadowBorderTopLeft {
+    border-top-style: inset;
+    border-left-style: inset;
+}
+.gvaShadowBorderTop {
+    border-top-style: inset;
+}
+.gvaShadowBorderTopRight {
+    border-top-style: inset;
+    border-right-style: inset;
+}
+.gvaShadowBorderLeft {
+    border-left-style: inset;
+}
+.gvaShadowBorderRight {
+    border-right-style: inset;
+}
+.gvaShadowBorderBottomLeft {
+    border-bottom-style: inset;
+    border-left-style: inset;
+}
+.gvaShadowBorderBottom {
+    border-bottom-style: inset;
+}
+.gvaShadowBorderBottomRight {
+    border-bottom-style: inset;
+    border-right-style: inset;
+}
+.gvaShadowBorder,
+.gvaShadowBorderTopLeft,
+.gvaShadowBorderTop,
+.gvaShadowBorderTopRight,
+.gvaShadowBorderLeft,
+.gvaShadowBorderRight,
+.gvaShadowBorderBottomLeft,
+.gvaShadowBorderBottom,
+.gvaShadowBorderBottomRight {
+	border-width: thin;
+    border-color: #ABABAB;
+}
+.gvaNoBorder {
+    border-style: none;
+}
+.gvaAlignLeft {
+    text-align: left;
+}
+.gvaAlignRight {
+    text-align: right;
+}
+.gvaAlignCentered {
+    text-align: center;
+}
+.gvaStretched,
+.gvaStretched>span>button.ui-button,
+.gvaStretchedTxt,
+.gvaWindowBlock {
+    width: 100%;
+}
+div.gvaStretchedInput>span,
+div.gvaStretchedInput>span>input {
+    width: 100% !important;
+}
+.gvaVStretched {
+    height: 100%;
+}
+.gvaHidden, .gvaWidgetStack ul {
+	display: none;
+}
+.gvaLabelCellTop {
+	padding-top: 3px;
+}
+.gvaLabelCellBottom {
+	padding-bottom: 3px;
+}
+.gvaLabelCellTextAreaTop {
+	padding-top: 3px;
+}
+.gvaLabelCellTextAreaBottom {
+	padding-bottom: 3px;
+}
+.gvaLayoutTable {
+	border-spacing: 0;
+}
+.gvaButtonImage span button {
+	padding: 0 !important;
+	margin: 0 !important;
+    white-space: nowrap;
+}
+.gvaButtonImage span button img {
+	vertical-align: middle;
+}
+.gvaButtonTitle span button {
+	padding: 0 6px !important;
+	margin: 0 !important;
+    white-space: nowrap;
+}
+.gvaButtonTitleRight span button ,
+.gvaButtonTitleLeft span button ,
+.gvaButtonTitleAbove span button ,
+.gvaButtonTitleBelow span button {
+	padding: 0 !important;
+    white-space: nowrap;
+}
+.gvaButtonTitleRight span button>span {
+    padding-right: 6px;
+}
+.gvaButtonTitleLeft span button>span {
+    padding-left: 6px;
+}
+.gvaButtonTitleAbove span button span div span,
+.gvaButtonTitleBelow span button span div span {
+    padding: 0 6px;
+}
+.gvaButtonTitleRight span button img,
+.gvaButtonTitleLeft span button img {
+	vertical-align: middle !important;
+}
+th.gvaDataTableColumn div {
+	padding: 0 !important;
+}
+.gvaDataTableColumn {
+	text-align: left !important;
+}
+td.gvaDataTableColumn {
+	overflow:hidden;
+}
+.gvaDataTablePaginatorLeft>div.ui-paginator {
+	text-align: left;
+}
+.gvaDataTablePaginatorRight>div.ui-paginator {
+	text-align: right;
+}
+.gvaMenuImage {
+    background-repeat: no-repeat;
+    display: inline-block;
+    float: left;
+    padding-right: 3px;
+}
+input, textarea {
+    ms-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+html, body, div, table, td, img, fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow: scroll;
+}
+form {
+    padding: 0;
+    margin: 0;
+}
+div.header {
+    width: 100%;
+}
+div.footer {
+    width: 100%;
+}
+div.body_container{
+    margin: 0 auto;
+}
+div.body_content {
+   float: left;
+}
+div.connection_status {
+    border: none;
+    margin: 0;
+    float: left;
+}
+div.navigation_container {
+    border: none;
+    float: left;
+    margin: 2px;
+}
+div.content_container {
+    background: none;
+    border: none;
+    float: left;
+    clear: left;
+}
+.gvaErrorMessage {
+    color: rgb(255, 0, 0);
+}
+.gvaNoWrap {
+    white-space: nowrap;
+}
+.gvaPre {
+    white-space: pre;
+}
+.ui-tabs-panel, .ui-accordion-content {
+	padding:0 !important;
+}
+.ui-accordion-content {
+	background: none;
+}
+.ice-checkboxbutton button {
+    border:none;
+}
+.ice-checkboxbutton .ui-state-active .ui-icon {
+    background: transparent;
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with g9. -->
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:p="http://www.springframework.org/schema/p" xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+  http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+
+  <!-- Transport Castor config etc. -->
+  <import resource="classpath:me/zway/transport/transport-context.xml" />
+
+  <!-- The properties for the WS clients, URI for the service etc. -->
+  <context:property-placeholder ignore-unresolvable="true" location="classpath*:me/zway/transport/**/rest-client-*.properties"  />
+
+  <!-- WebService template used by the clients in this project -->
+  <bean id="me.zway.transport.webServiceTemplate" class="org.springframework.ws.client.core.WebServiceTemplate" />
+
+  <!--Import the client implementations -->
+  <import  resource="classpath*:me/zway/transport/**/rest-client-*.xml"/>
+
+</beans>

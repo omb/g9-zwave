@@ -1,0 +1,206 @@
+<!--
+  Generated with g9.
+-->
+<h:panelGroup xmlns:h="http://java.sun.com/jsf/html"
+              xmlns:f="http://java.sun.com/jsf/core"
+              xmlns:ace="http://www.icefaces.org/icefaces/components"
+              xmlns:gva="http://esito.no/g9/jsf">
+  <table class="gvaLayoutTable WindowNoFrame gvaWindowBlock" style="padding: 11px 11px 11px 11px;" >
+    <tr align="left" valign="top" style="height:100%;">
+      <td>
+        <h:panelGroup id="Devices_dia_newBasicContainer" styleClass="${devices_dia.shown['Devices_dia_newBasicContainer'] ? '' : 'gvaHidden'}" >
+          <table class="gvaLayoutTable StandardNoFrame gvaNoBorder" style="padding: 0px 0px 0px 0px;" >
+            <tr align="left" valign="top" style="height:100%;">
+              <td />
+              <td/>
+            </tr>
+          </table>
+        </h:panelGroup>
+      </td>
+      <td/>
+    </tr>
+    <tr align="left" valign="top" style="height:100%;">
+      <td style="height:6px;min-height:6px;" />
+      <td/>
+    </tr>
+    <tr align="left" valign="top" style="height:100%;">
+      <td>
+        <h:panelGroup id="Devices_dia_deviceListClass" styleClass="${devices_dia.shown['Devices_dia_deviceListClass'] ? '' : 'gvaHidden'}" >
+          <h:outputText value="#{devices_dia.msg('dialog.Devices_dia.DeviceListClass.title')}" rendered="${devices_dia.shown['Devices_dia_deviceListClass']}" styleClass="StandardEtchedIn gvaBlockTitle" />
+          <table class="gvaLayoutTable StandardEtchedIn gvaEtchedBorder" style="padding: 11px 11px 11px 11px;" >
+            <tr align="left" valign="top" style="height:100%;">
+              <td>
+                <h:panelGroup id="Devices_dia_deviceListData" styleClass="${devices_dia.shown['Devices_dia_deviceListData'] ? '' : 'gvaHidden'}" >
+                  <table class="gvaLayoutTable StandardNoFrame gvaNoBorder" style="padding: 0px 0px 0px 0px;" >
+                    <tr align="left" valign="top" style="height:100%;">
+                      <td>
+                        <table><tr><td>
+                          <h:selectBooleanCheckbox
+                                                   id="Devices_dia_deviceList_structureChanged"
+                                                   styleClass="StandardShadowIn ${devices_dia.shown['Devices_dia_deviceList_structureChanged'] ? '' : 'gvaHidden'} ${devices_dia.mandatory['Devices_dia_deviceList_structureChanged'] ? 'gvaMandatory' : ''}"
+                                                   disabled="${!devices_dia.enabled['Devices_dia_deviceList_structureChanged']}"
+                                                   tabindex="3"
+                                                   readonly="${!devices_dia.editable['Devices_dia_deviceList_structureChanged']}"
+                                                   value="#{devices_dia.deviceList_structureChanged}"
+                                                    />
+                        </td><td>
+                          <label for="iceform:Devices_dia_deviceList_structureChanged">
+                            <h:outputText value="#{devices_dia.msg('dialog.Devices_dia.DeviceList.structureChanged.title')}" styleClass="StandardShadowIn" />
+                          </label>
+                        </td></tr></table>
+                      </td>
+                      <td style="width:11px;min-width:11px;" />
+                      <td style="width: 1px;" class="gvaLabelCellTop">
+                        <label for="iceform:Devices_dia_deviceList_updateTime">
+                          <h:outputText
+                                        id="Devices_dia_deviceListUpdateTimeLabel"
+                                        styleClass="StandardNoFrame gvaNoWrap ${devices_dia.shown['Devices_dia_deviceListUpdateTimeLabel'] ? '' : 'gvaHidden'}"
+                                        disabled="${!devices_dia.enabled['Devices_dia_deviceListUpdateTimeLabel']}"
+                                        value="#{devices_dia.msg('dialog.Devices_dia.DeviceListUpdateTimeLabel.title')}"
+                                         />
+                        </label>
+                      </td>
+                      <td style="padding-left: 6px;">
+                        <h:inputText maxlength="11" size="11"
+                                     id="Devices_dia_deviceList_updateTime"
+                                     styleClass="StandardShadowIn gvaAlignLeft ${devices_dia.shown['Devices_dia_deviceList_updateTime'] ? '' : 'gvaHidden'} ${devices_dia.mandatory['Devices_dia_deviceList_updateTime'] ? 'gvaMandatory' : ''}"
+                                     disabled="${!devices_dia.enabled['Devices_dia_deviceList_updateTime']}"
+                                     tabindex="4"
+                                     readonly="${!devices_dia.editable['Devices_dia_deviceList_updateTime']}"
+                                     value="#{devices_dia.deviceList_updateTime}"
+                                      >
+                          <gva:numberConverter dataType="longint" displayRule="" inputLength="11" storedLength="0" scale="0" blankWhenZero="False" title="${devices_dia.title['Devices_dia_deviceList_updateTime']}"/>
+                        </h:inputText>
+                      </td>
+                      <td/>
+                    </tr>
+                  </table>
+                </h:panelGroup>
+              </td>
+              <td style="width:11px;min-width:11px;" />
+              <td>
+                <h:panelGroup id="Devices_dia_deviceListButtons" styleClass="${devices_dia.shown['Devices_dia_deviceListButtons'] ? '' : 'gvaHidden'}" >
+                  <table class="gvaLayoutTable StandardNoFrame gvaNoBorder" style="padding: 0px 0px 0px 0px;" >
+                    <tr align="left" valign="top" style="height:100%;">
+                      <td>
+                        <ace:pushButton actionListener="#{devices_dia.deviceFindAllButton_Clicked}"
+                                        id="Devices_dia_deviceFindAllButton"
+                                        alt="#{devices_dia.msg('dialog.Devices_dia.DeviceFindAllButton.alt')}"
+                                        styleClass="StandardShadowIn gvaButtonImage ${devices_dia.shown['Devices_dia_deviceFindAllButton'] ? '' : 'gvaHidden'}"
+                                        disabled="${!devices_dia.enabled['Devices_dia_deviceFindAllButton']}"
+                                        tabindex="1"
+                                         >
+                          <h:graphicImage alt="#{devices_dia.msg('dialog.Devices_dia.DeviceFindAllButton.alt')}" value="#{resource['images:findSmall.gif']}" />
+                        </ace:pushButton>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr align="left" valign="top" style="height:100%;">
+                      <td style="height:6px;min-height:6px;" />
+                      <td/>
+                    </tr>
+                    <tr align="left" valign="top" style="height:100%;">
+                      <td>
+                        <ace:pushButton actionListener="#{devices_dia.deviceDetailButton_Clicked}"
+                                        id="Devices_dia_deviceDetailButton"
+                                        alt="#{devices_dia.msg('dialog.Devices_dia.DeviceDetailButton.alt')}"
+                                        styleClass="StandardShadowIn gvaButtonImage ${devices_dia.shown['Devices_dia_deviceDetailButton'] ? '' : 'gvaHidden'}"
+                                        disabled="${!devices_dia.enabled['Devices_dia_deviceDetailButton']}"
+                                        tabindex="2"
+                                         >
+                          <h:graphicImage alt="#{devices_dia.msg('dialog.Devices_dia.DeviceDetailButton.alt')}" value="#{resource['images:previewSmall.gif']}" />
+                        </ace:pushButton>
+                      </td>
+                      <td/>
+                    </tr>
+                  </table>
+                </h:panelGroup>
+              </td>
+              <td/>
+            </tr>
+          </table>
+        </h:panelGroup>
+      </td>
+      <td/>
+    </tr>
+    <tr align="left" valign="top" style="height:100%;">
+      <td style="height:6px;min-height:6px;" />
+      <td/>
+    </tr>
+    <tr align="left" valign="top" style="height:100%;">
+      <td>
+        <h:panelGroup id="Devices_dia_devicesClass" styleClass="${devices_dia.shown['Devices_dia_devicesClass'] ? '' : 'gvaHidden'}" >
+          <h:outputText value="#{devices_dia.msg('dialog.Devices_dia.DevicesClass.title')}" rendered="${devices_dia.shown['Devices_dia_devicesClass']}" styleClass="StandardEtchedIn gvaBlockTitle" />
+          <table class="gvaLayoutTable StandardEtchedIn gvaEtchedBorder" style="padding: 11px 11px 11px 11px;" >
+            <tr align="left" valign="top" style="height:100%;">
+              <td>
+                <ace:dataTable value="#{devices_dia.devicesTable}"
+                               var="devices"
+                               pageCount="5"
+                               rowSelectListener="#{devices_dia.devicesTable_Selected}"
+                               rowUnselectListener="#{devices_dia.devicesTable_Unselected}"
+                               selectionMode="#{devices_dia.devicesTableSelectionMode}"
+                               stateMap="#{devices_dia.devicesTableRowStateMap}"
+                               style="padding: 0px 0px 0px 0px;"
+                               id="Devices_dia_devicesTable"
+                               styleClass="Table gvaTableBlock gvaNoBorder ${devices_dia.shown['Devices_dia_devicesTable'] ? '' : 'gvaHidden'}"
+                               disabled="${!devices_dia.enabled['Devices_dia_devicesTable']}"
+                               tabIndex="5"
+                                >
+                  <ace:column style="width:120px;max-width:120px;padding:4px 4px;"
+                              styleClass="gvaDataTableColumn StandardNoFrame_header StandardShadowIn_column"
+                              sortBy="#{devices.devices_id}"
+                              sortPriority="#{devices_dia.sortPriority['Devices_dia_devices_id']}"
+                              sortAscending="#{devices_dia.sortAscending['Devices_dia_devices_id']}"
+                              rendered="${devices_dia.shown['Devices_dia_devices_id']}" >
+                    <f:facet name="header">
+                      <h:commandLink value="#{devices_dia.msg('dialog.Devices_dia.devices.id.column_title')}" style="text-decoration: none; cursor: default;" />
+                    </f:facet>
+                    <h:outputText id="Devices_dia_devices_id_column" value="#{devices.devices_id}"
+                                  styleClass="StandardShadowIn_font gvaAlignLeft ${devices_dia.shown['Devices_dia_devices_id'] ? '' : 'gvaHidden'}"
+                                  style="white-space:nowrap;"
+                                  >
+                    </h:outputText>
+                  </ace:column>
+                  <ace:column style="width:120px;max-width:120px;padding:4px 4px;"
+                              styleClass="gvaDataTableColumn StandardNoFrame_header StandardShadowIn_column"
+                              sortBy="#{devices.devices_deviceType}"
+                              sortPriority="#{devices_dia.sortPriority['Devices_dia_devices_deviceType']}"
+                              sortAscending="#{devices_dia.sortAscending['Devices_dia_devices_deviceType']}"
+                              rendered="${devices_dia.shown['Devices_dia_devices_deviceType']}" >
+                    <f:facet name="header">
+                      <h:commandLink value="#{devices_dia.msg('dialog.Devices_dia.devices.deviceType.column_title')}" style="text-decoration: none; cursor: default;" />
+                    </f:facet>
+                    <h:outputText id="Devices_dia_devices_deviceType_column" value="#{devices.devices_deviceType}"
+                                  styleClass="StandardShadowIn_font gvaAlignLeft ${devices_dia.shown['Devices_dia_devices_deviceType'] ? '' : 'gvaHidden'}"
+                                  style="white-space:nowrap;"
+                                  >
+                    </h:outputText>
+                  </ace:column>
+                  <ace:column style="width:95px;max-width:95px;padding:4px 4px;"
+                              styleClass="gvaDataTableColumn StandardNoFrame_header StandardShadowIn_column"
+                              sortBy="#{devices.devices_updateTime}"
+                              sortPriority="#{devices_dia.sortPriority['Devices_dia_devices_updateTime']}"
+                              sortAscending="#{devices_dia.sortAscending['Devices_dia_devices_updateTime']}"
+                              rendered="${devices_dia.shown['Devices_dia_devices_updateTime']}" >
+                    <f:facet name="header">
+                      <h:commandLink value="#{devices_dia.msg('dialog.Devices_dia.devices.updateTime.column_title')}" style="text-decoration: none; cursor: default;" />
+                    </f:facet>
+                    <h:outputText id="Devices_dia_devices_updateTime_column" value="#{devices.devices_updateTime}"
+                                  styleClass="StandardShadowIn_font gvaAlignLeft ${devices_dia.shown['Devices_dia_devices_updateTime'] ? '' : 'gvaHidden'}"
+                                  style="white-space:nowrap;"
+                                  >
+                      <gva:numberConverter dataType="longint" displayRule="" inputLength="11" storedLength="0" scale="0" blankWhenZero="False" title="${devices_dia.title['Devices_dia_devices_updateTime']}"/>
+                    </h:outputText>
+                  </ace:column>
+                </ace:dataTable>
+              </td>
+              <td/>
+            </tr>
+          </table>
+        </h:panelGroup>
+      </td>
+      <td/>
+    </tr>
+  </table>
+</h:panelGroup>
