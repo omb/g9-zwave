@@ -2,7 +2,14 @@
 
 package zwave.faces.devices_dia;
 
+import java.util.List;
+
+import me.zwave.vdev.Device;
+import me.zwave.vdev.DeviceList;
+import no.g9.client.core.action.DisplayableHookAdapter;
+import no.g9.support.ActionType;
 import zwave.faces.devices_dia.generated.Devices_diaDefaultController;
+import zwave.faces.devices_dia.generated.Devices_diaRemoteServices;
 
 /**
  * The customizable controller for the Devices_dia dialog.
@@ -16,7 +23,25 @@ public final class Devices_diaController extends Devices_diaDefaultController {
      */
     @Override
     public void init() {
-        // Add own initialization code here.
+        registerHook(Devices_diaRemoteServices.SERVICE.Z_AUTOMATION_GET_DEVICES, ActionType.INVOKE, new InvokeHook());
+    }
+
+    class InvokeHook extends DisplayableHookAdapter<List<DeviceList>> {
+
+        /**
+         * @param result .
+         */
+        @Override
+        public void performed(List<DeviceList> result) {
+            if (!result.isEmpty()) {
+                DeviceList dl = result.get(0);
+                System.out.println("Available devices since: " + dl.getUpdateTime());
+                for (Device d : dl.getDevices()) {
+                    System.out.println(d);
+                }
+            }
+        }
+
     }
 
 }

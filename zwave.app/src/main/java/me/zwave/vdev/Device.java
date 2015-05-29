@@ -13,4 +13,13 @@ public class Device extends DeviceDefault {
         super();
     }
 
+    @Override
+    public String toString() {
+        StringBuffer sb = new StringBuffer("[Device |");
+        sb.append(" id=").append(getId());
+        sb.append(" type=").append(getDeviceType());
+        sb.append("]");
+        return sb.toString();
+    }
+
 }
