@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated domain-model -->
+      <package
+            uri="com.zwave.domain"
+            class="com.zwave.domain.DomainPackage"
+            genModel="model/domain-model.xcore"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated zway-vdev -->
+      <package
+            uri="me.zwave.vdev"
+            class="me.zwave.vdev.VdevPackage"
+            genModel="model/zway-vdev.xcore"/>
+   </extension>
+
+</plugin>

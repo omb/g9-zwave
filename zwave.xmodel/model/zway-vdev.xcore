@@ -1,0 +1,69 @@
+package me.zwave.vdev
+
+annotation "http://www.esito.no/g9" as g9 
+annotation "http://www.esito.no/g9/rest" as g9rest 
+
+@g9 (isPersistent="false")
+class Device {
+	id String ^id
+	String deviceType
+	int updateTime
+
+	@g9 (isPersistent="false")
+	refers DeviceMetrics[1..1] metrics
+}
+
+@g9 (isPersistent="false")
+class DeviceMetrics {
+	String probeTitle
+	String scaleTitle
+	String level
+	String icon
+	String title
+	String mode
+}
+
+@g9 (isPersistent="false")
+class DeviceList {
+	boolean structureChanged
+	int updateTime
+	
+	@g9 (isPersistent="false")
+	contains unordered Device[] devices
+}
+
+@g9 (isPersistent="false")
+class Command {
+	String command
+	int level
+}
+
+enum DeviceType {
+	battery = 1
+	doorlock = 2
+	thermostat = 3
+	switchBinary = 4
+	switchMultilevel = 5
+	sensorBinary = 6
+	sensorMultilevel = 7
+	switchToggle = 8
+}
+
+@g9rest (BaseUri="ZAutomation/api/v1")
+interface ZAutomation {
+
+	@g9rest(RestUri="/devices", ExternalService="true", ExternalStructureVarName = "data", JsonIncludeRoot="false")
+	op DeviceList getDevices()
+
+	@g9rest(RestUri="/devices?since={since}", ExternalService="true", ExternalStructureVarName = "data", JsonIncludeRoot="false")
+	op DeviceList getChangedDevices(int since)
+
+	@g9rest(RestUri="/devices/{deviceId}", ExternalService="true", ExternalStructureVarName = "data", JsonIncludeRoot="false")
+	op Device getDevice(String deviceId)
+
+	@g9rest(RestUri="/devices/{deviceId}/command/{command}", JsonIncludeRoot="false")
+	op void sendCommand(String deviceId, String command)
+
+	@g9rest(RestUri="/devices/{deviceId}/command/exact?level={level}", JsonIncludeRoot="false")
+	op void setExactLevel(String deviceId, int level)
+}

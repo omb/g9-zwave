@@ -1,0 +1,225 @@
+package com.zwave.domain
+
+annotation "http://www.esito.no/g9" as g9 
+
+type CommandClassMap wraps java.util.Map<String, CommandClass>
+
+@g9 (isPersistent="false")
+class Controller {
+	refers unordered ControllerData[+] data
+}
+
+@g9 (isPersistent="false")
+class ControllerData {
+	Object value
+    String dataType
+    refers DefaultData[0..1] nodeId
+    refers DefaultData[0..1] homeId
+    refers DefaultData[0..1] SUCNodeId
+    refers DefaultData[0..1] isPrimary
+    refers DefaultData[0..1] isInOthersNetwork
+    refers DefaultData[0..1] isRealPrimary
+    refers DefaultData[0..1] isSUC
+    refers DefaultData[0..1] SISPresent
+    refers DefaultData[0..1] libType
+    refers DefaultData[0..1] SDK
+    refers DefaultData[0..1] ZWlibMajor
+    refers DefaultData[0..1] ZWlibMinor
+    refers DefaultData[0..1] ZWLib
+    refers DefaultData[0..1] ZWVersion
+    refers DefaultData[0..1] ZWaveChip
+    refers DefaultData[0..1] APIVersion
+    refers DefaultData[0..1] manufacturerId
+    refers DefaultData[0..1] vendor
+    refers DefaultData[0..1] manufacturerProductType
+    refers DefaultData[0..1] manufacturerProductId
+    refers DefaultData[0..1] capabilities
+    refers DefaultData[0..1] controllerState
+    refers DefaultData[0..1] nonManagmentJobs
+    refers DefaultData[0..1] lastIncludedDevice
+    refers DefaultData[0..1] lastExcludedDevice
+    refers DefaultData[0..1] secureInclusion
+    refers DefaultData[0..1] oldSerialAPIAckTimeout10ms
+    refers DefaultData[0..1] oldSerialAPIByteTimeout10ms
+    refers DefaultData[0..1] curSerialAPIAckTimeout10ms
+    refers DefaultData[0..1] curSerialAPIByteTimeout10ms
+    refers DefaultData[0..1] countJobs
+    refers DefaultData[0..1] memoryGetAddress
+    refers DefaultData[0..1] memoryGetData
+    refers DefaultData[0..1] functionClasses
+    refers DefaultData[0..1] functionClassesNames
+    refers DefaultData[0..1] softwareRevisionVersion
+    refers DefaultData[0..1] softwareRevisionId
+    refers DefaultData[0..1] softwareRevisionDate
+    refers DefaultData[0..1] uuid
+    int invalidateTime
+    int updateTime
+    refers Device[+] devices
+}
+
+@g9 (isPersistent="false")
+class Device {
+	refers DeviceData data
+	refers Instance[+] instances
+	int invalidateTime
+    int updateTime
+}
+
+@g9 (isPersistent="false")
+class DeviceData {
+	Object value
+    String dataType
+    refers DefaultData[0..1] basicType
+    refers DefaultData[0..1] genericType
+    refers DefaultData[0..1] specificType
+    refers DefaultData[0..1] infoProtocolSpecific
+    refers DefaultData[0..1] deviceTypeString
+    refers DefaultData[0..1] isVirtual
+    refers DefaultData[0..1] isListening
+    refers DefaultData[0..1] isRouting
+    refers DefaultData[0..1] isAwake
+    refers DefaultData[0..1] optional
+    refers DefaultData[0..1] isFailed
+    refers DefaultData[0..1] beam
+    refers DefaultData[0..1] sensor250
+    refers DefaultData[0..1] sensor1000
+    refers DefaultData[0..1] neighbours
+    refers DefaultData[0..1] manufacturerId
+    refers DefaultData[0..1] vendorString
+    refers DefaultData[0..1] manufacturerProductType
+    refers DefaultData[0..1] manufacturerProductId
+    refers DefaultData[0..1] ZWLib
+    refers DefaultData[0..1] ZWProtocolMajor
+    refers DefaultData[0..1] ZWProtocolMinor
+    refers DefaultData[0..1] SDK
+    refers DefaultData[0..1] applicationMajor
+    refers DefaultData[0..1] applicationMinor
+    refers DefaultData[0..1] nodeInfoFrame
+    refers DefaultData[0..1] ZDDXMLFile
+    refers DefaultData[0..1] lastSend
+    refers DefaultData[0..1] lastNonceGet
+    refers DefaultData[0..1] lastReceived
+    refers DefaultData[0..1] failureCount
+    refers DefaultData[0..1] keepAwake
+    refers DefaultData[0..1] countSuccess
+    refers DefaultData[0..1] countFailed
+    refers DefaultData[0..1] queueLength
+    refers DefaultData[0..1] givenName
+    refers DefaultData[0..1] secureChannelEstablished
+    refers DefaultData[0..1] secureControllerId
+    int invalidateTime
+    int updateTime
+}
+
+@g9 (isPersistent="false")
+class Instance {
+	refers InstanceData data
+	CommandClassMap commandClasses
+	//refers CommandClass[+] commandClasses
+}
+
+@g9 (isPersistent="false")
+class InstanceData {
+	Object value
+    String dataType
+    refers DefaultData[0..1] dynamic
+    refers DefaultData[0..1] genericType
+    refers DefaultData[0..1] specificType
+    int invalidateTime
+    int updateTime
+}
+
+@g9 (isPersistent="false")
+class CommandClass {
+	String name
+	refers CommandClassData data
+	int invalidateTime
+	int updateTime
+}
+
+@g9 (isPersistent="false")
+class CommandClassData {
+	Object value
+	String dataType
+	refers DefaultData[0..1] supported
+	refers DefaultData[0..1] version
+	refers DefaultData[0..1] security
+	refers DefaultData[0..1] interviewDone
+	refers DefaultData[0..1] interviewCounter
+	refers DefaultData[0..1] level
+	refers DefaultData[0..1] startChange
+	refers DefaultData[0..1] stopChange
+	refers DefaultData[0..1] currentScene
+	refers DefaultData[0..1] dimmingDuration
+	refers DefaultData[0..1] overrideType
+	refers DefaultData[0..1] overrideState
+	refers DefaultData[0..1] dynamic
+	//    Map<String, GroupInformation> info
+	refers GroupInformation[+] info
+	refers DefaultData[0..1] reset
+	refers DefaultData[0..1] maxScenes
+	refers DefaultData[0..1] keyAttribute
+	refers DefaultData[0..1] plusVersion
+	refers DefaultData[0..1] roleType
+	refers DefaultData[0..1] nodeType
+	refers DefaultData[0..1] installerIcon
+	refers DefaultData[0..1] userIcon
+	refers DefaultData[0..1] roleTypeString
+	refers DefaultData[0..1] endPoints
+	refers DefaultData[0..1] identical
+	refers DefaultData[0..1] vendorId
+	refers DefaultData[0..1] vendor
+	refers DefaultData[0..1] productId
+	refers DefaultData[0..1] productType
+	refers DefaultData[0..1] timeout
+	refers DefaultData[0..1] nodename
+	refers DefaultData[0..1] location
+	refers DefaultData[0..1] nameEncoding
+	refers DefaultData[0..1] locationEncoding
+	refers DefaultData[0..1] groups
+	refers DefaultData[0..1] specificGroup
+	refers DefaultData[0..1] typemask
+	refers DefaultData[0..1] srcNodeId
+	refers DefaultData[0..1] srcInstanceId
+	//    Map<String, Function> functions // eller Sensor/sensors
+	refers Function[+] functions
+}
+
+@g9 (isPersistent="false")
+class GroupInformation {
+	Object value
+	String dataType
+	refers DefaultData[0..1] groupName
+	refers DefaultData[0..1] mode
+	refers DefaultData[0..1] profile
+	refers DefaultData[0..1] eventCode
+	refers ExtendedDefaultData[0..1] commands
+}
+
+@g9 (isPersistent="false")
+class Function {
+	int invalidateTime
+	int updateTime
+	String dataType
+	Object value
+	refers DefaultData[0..1] sensorTypeString
+	refers DefaultData[0..1] level
+	refers DefaultData[0..1] functionValue
+	refers DefaultData[0..1] deviceScale
+	refers DefaultData[0..1] scale
+	refers DefaultData[0..1] scaleString
+}
+
+@g9 (isPersistent="false")
+class DefaultData {
+	Object value
+    String dataType
+    int invalidateTime
+    int updateTime
+}
+
+@g9 (isPersistent="false")
+class ExtendedDefaultData extends DefaultData {
+	refers DefaultData[+] valueSet
+	//    Map<String, DefaultData> valueSet	
+}

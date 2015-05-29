@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ApplicationRoot
+	CaseSensitive="True"
+	ModelVersion="1.7.0"
+	PackageRefName=""
+	id="G1432712289610"
+	name="ZwayApp">
+	<AppDialogModels
+		name="DialogModels">
+		<DependencyDialog
+			DependencyId="G1432712289613"
+			DependencyName="ApplicationWindow"
+			id="G1432712289619"
+			name="ApplicationWindow"
+		/>
+		<DependencyDialog
+			DependencyId="G1432712289675"
+			DependencyName="DeviceDetail_dia"
+			id="G1432712289711"
+			name="DeviceDetail_dia"
+		/>
+		<DependencyDialog
+			DependencyId="G1432712289636"
+			DependencyName="Devices_dia"
+			id="G1432712289710"
+			name="Devices_dia"
+		/>
+	</AppDialogModels>
+	<AppObjectSelections
+		name="ObjectSelections"
+	/>
+</ApplicationRoot>
