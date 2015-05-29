@@ -2,8 +2,6 @@
 
 package me.zwave.vdev;
 
-import java.util.List;
-
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
@@ -22,13 +20,13 @@ public class ZAutomationPayload {
     @XmlAccessorType(XmlAccessType.NONE)
     public static class GetDevicesResponse {
         @XmlElement
-        private List<me.zway.transport.devices_os.DeviceListTransport> data;
+        private me.zway.transport.devices_os.DeviceListTransport data;
     	/**
     	 * Gets the response.
     	 *
     	 * @return the response
     	 */
-    	public List<me.zway.transport.devices_os.DeviceListTransport> getData() {
+    	public me.zway.transport.devices_os.DeviceListTransport getData() {
     	    return this.data;
     	}
 
@@ -37,7 +35,7 @@ public class ZAutomationPayload {
     	 *
     	 * @param response the new response
     	 */
-    	public void setData(List<me.zway.transport.devices_os.DeviceListTransport> response) {
+    	public void setData(me.zway.transport.devices_os.DeviceListTransport response) {
     	    this.data = response;
     	}
     }

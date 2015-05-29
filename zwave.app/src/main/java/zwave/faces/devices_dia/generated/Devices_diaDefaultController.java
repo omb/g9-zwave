@@ -15,6 +15,7 @@ import no.esito.jvine.action.ActionMethod;
 import no.esito.jvine.controller.JVineController;
 import no.esito.jvine.controller.OSNode;
 import no.esito.log.Logger;
+import no.g9.client.core.action.ActionHookAdapter;
 import no.g9.client.core.action.ActionInfo;
 import no.g9.client.core.action.EventContext;
 import no.g9.client.core.controller.DialogConstant;
@@ -253,6 +254,15 @@ public abstract class Devices_diaDefaultController extends DialogController {
     * Creates hooks for Selected/Unselected events.
     */
    private void initListHooks() {
+       ActionHookAdapter<Object> selectedDevicesTableHook= new ActionHookAdapter<Object>() {
+
+           @Override
+           public void succeeded() {
+               openDeviceDetail(getEvent());
+           }
+       };
+       registerHook(Devices_diaConst.DIALOG.DEVICES_TABLE, ActionType.SELECT, selectedDevicesTableHook);
+
    }
 
    /**

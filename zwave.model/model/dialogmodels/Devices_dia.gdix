@@ -192,6 +192,12 @@
 					id="G1432813062520"
 					name="updateTime"
 				/>
+				<Event
+					TriggerType="Selected"
+					id="G1432903531518"
+					name="Selected">
+					<Reference name="Method" IdRef="G1432712289664"/>
+				</Event>
 				<Reference name="SortSequence" IdRef="G1432813062516"/>
 				<Reference name="SortSequence" IdRef="G1432813062518"/>
 				<Reference name="SortSequence" IdRef="G1432813062520"/>

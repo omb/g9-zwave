@@ -4,7 +4,6 @@ package zwave.service.zautomation.services;
 
 import java.io.StringReader;
 import java.util.HashMap;
-import java.util.List;
 
 import javax.ws.rs.core.MediaType;
 import javax.xml.bind.JAXBContext;
@@ -26,8 +25,8 @@ public class GetDevicesService extends ZAutomationService {
 		super("me/zway/transport/rest-client-zautomation.properties", "ws.me.zway.transport.zAutomation.servletRootURI");
 	}
 
-	public List<DeviceList> getDevices() {
-		return (List<DeviceList>) converter.convert(getResponse().getData(), DeviceList.class);
+	public DeviceList getDevices() {
+		return converter.convert(getResponse().getData(), DeviceList.class);
 	}
 
 	private GetDevicesResponse getResponse() {

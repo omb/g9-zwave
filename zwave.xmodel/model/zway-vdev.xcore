@@ -10,7 +10,7 @@ class Device {
 	int updateTime
 
 	@g9 (isPersistent="false")
-	refers DeviceMetrics[1..1] metrics
+	contains DeviceMetrics[1..1] metrics
 }
 
 @g9 (isPersistent="false")

@@ -2,8 +2,6 @@
 
 package zwave.service.zautomation;
 
-import java.util.List;
-
 import me.zwave.vdev.Device;
 import me.zwave.vdev.DeviceList;
 import me.zwave.vdev.ZAutomation;
@@ -24,7 +22,7 @@ import zwave.service.zautomation.services.*;
 public class ZAutomationRestClient extends AbstractWSClient implements ZAutomation {
 
     @Override
-    public List<DeviceList> getDevices() {
+    public DeviceList getDevices() {
     	return new GetDevicesService().getDevices();
     }
 

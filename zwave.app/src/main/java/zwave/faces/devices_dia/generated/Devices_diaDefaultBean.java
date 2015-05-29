@@ -278,6 +278,16 @@ public abstract class Devices_diaDefaultBean extends FacesDialogBean {
         dispatchEvent(field, "Clicked", "openDeviceDetail");
     }
 
+    /**
+     * The event handler for the Selected event on the DevicesTable TableBlock.
+     *
+     * @param listRow the row that got the event
+     */
+    public void devicesTable_Selected(ListRow listRow) {
+        DialogObjectConstant field = Devices_diaConst.DIALOG.DEVICES_TABLE;
+        dispatchEvent(listRow, field, "Selected", "openDeviceDetail");
+    }
+
     @Override
     public void initBean() {
         initPropertyMaps(Devices_diaConst.DIALOG.class);

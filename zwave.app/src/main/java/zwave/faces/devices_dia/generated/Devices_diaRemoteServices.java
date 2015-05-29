@@ -2,8 +2,6 @@
 
 package zwave.faces.devices_dia.generated;
 
-import java.util.List;
-
 import me.zwave.vdev.DeviceList;
 import me.zwave.vdev.ZAutomation;
 
@@ -68,17 +66,17 @@ public final class Devices_diaRemoteServices {
         ParameterBinding<DeviceList> binding_0 = ParameterBindingImpl.getBinding("getDevices", DeviceList_0, null, ParameterBinding.RETURN_VALUE);
         remote.addParameterBinding(binding_0);
 
-        ActionTask<List<DeviceList>> actionTask = new ActionTask<List<DeviceList>> () {
+        ActionTask<DeviceList> actionTask = new ActionTask<DeviceList> () {
 
             @Override
-            public List<DeviceList> call() throws Exception {
+            public DeviceList call() throws Exception {
 
                 ZAutomation zAutomation = G9Spring.getBean(ZAutomation.class, "zAutomation");
-                List<DeviceList> result = zAutomation.getDevices();
+                DeviceList result = zAutomation.getDevices();
 
-                ParameterBinding<List<DeviceList>> returnParameter = remote.getReturnParameter();
+                ParameterBinding<DeviceList> returnParameter = remote.getReturnParameter();
                 returnParameter.setFormalParameterValue(result);
-                List<DeviceList> value = returnParameter.getActualParameter().getParameterValue();
+                DeviceList value = returnParameter.getActualParameter().getParameterValue();
                 setTaskObject(value);
                 return value;
             }

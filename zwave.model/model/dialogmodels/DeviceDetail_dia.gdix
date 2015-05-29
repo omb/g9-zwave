@@ -27,6 +27,7 @@
 		name="Window">
 		<SimpleBlock
 			HorizontalFlexibility="Stretched"
+			TABSequence="False"
 			id="G1432821131553"
 			name="Buttons">
 			<ButtonControl

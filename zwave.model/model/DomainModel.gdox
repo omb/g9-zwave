@@ -259,7 +259,6 @@
 				ModelTypeRefName="DeviceList"
 				ModelVisibility="Public"
 				Ordered="True"
-				UpperBound="-1"
 				id="me-zwave-vdev-ZAutomation:getDevices"
 				name="getDevices">
 				<TaggedValue

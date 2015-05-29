@@ -2,8 +2,6 @@
 
 package me.zwave.vdev;
 
-import java.util.List;
-
 /**
  * This file will be overwritten the next time it is generated from g9.
  */
@@ -11,9 +9,9 @@ import java.util.List;
 public interface ZAutomation {
 
     /**
-     * @return List<DeviceList>
+     * @return DeviceList
      */
-    List<DeviceList> getDevices();
+    DeviceList getDevices();
 
     /**
      * @param since

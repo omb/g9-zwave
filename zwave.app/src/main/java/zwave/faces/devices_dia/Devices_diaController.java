@@ -26,15 +26,15 @@ public final class Devices_diaController extends Devices_diaDefaultController {
         registerHook(Devices_diaRemoteServices.SERVICE.Z_AUTOMATION_GET_DEVICES, ActionType.INVOKE, new InvokeHook());
     }
 
-    class InvokeHook extends DisplayableHookAdapter<List<DeviceList>> {
+    class InvokeHook extends DisplayableHookAdapter<DeviceList> {
 
         /**
          * @param result .
          */
         @Override
-        public void performed(List<DeviceList> result) {
-            if (!result.isEmpty()) {
-                DeviceList dl = result.get(0);
+        public void performed(DeviceList result) {
+            if (result != null) {
+                DeviceList dl = result;
                 System.out.println("Available devices since: " + dl.getUpdateTime());
                 for (Device d : dl.getDevices()) {
                     System.out.println(d);
