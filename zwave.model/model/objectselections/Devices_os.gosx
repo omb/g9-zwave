@@ -78,7 +78,7 @@
 						<OSAttribute
 							AttributeID="me-zwave-vdev-DeviceMetrics:scaleTitle"
 							AttributeName="scaleTitle"
-							ItemRemoved="False"
+							ItemRemoved="True"
 							id="G1433147671637"
 							name="scaleTitle"
 						/>
@@ -92,21 +92,21 @@
 						<OSAttribute
 							AttributeID="me-zwave-vdev-DeviceMetrics:icon"
 							AttributeName="icon"
-							ItemRemoved="False"
+							ItemRemoved="True"
 							id="G1433147671639"
 							name="icon"
 						/>
 						<OSAttribute
 							AttributeID="me-zwave-vdev-DeviceMetrics:title"
 							AttributeName="title"
-							ItemRemoved="False"
+							ItemRemoved="True"
 							id="G1433147671640"
 							name="title"
 						/>
 						<OSAttribute
 							AttributeID="me-zwave-vdev-DeviceMetrics:mode"
 							AttributeName="mode"
-							ItemRemoved="False"
+							ItemRemoved="True"
 							id="G1433147671641"
 							name="mode"
 						/>

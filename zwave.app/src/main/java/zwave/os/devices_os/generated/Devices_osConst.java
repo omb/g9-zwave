@@ -3,8 +3,10 @@
 package zwave.os.devices_os.generated;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -614,6 +616,12 @@ public interface Devices_osConst {
         public static synchronized String[] getAttributeNames() {
             if (attributeNames == null) {
                 attributeNames = no.esito.util.Const.getTitles(values());
+                List<String> list = new LinkedList<>(Arrays.asList(attributeNames));
+                list.remove("metrics.scaleTitle");
+                list.remove("metrics.icon");
+                list.remove("metrics.title");
+                list.remove("metrics.mode");
+                attributeNames = list.toArray(new String[list.size()]);
             }
             return attributeNames.clone();
         }

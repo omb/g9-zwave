@@ -122,8 +122,6 @@ public interface Devices_diaConst {
         WINDOW("Window", "Devices_dia_window", DialogObjectType.WindowBlock, null, null, DIALOG_NAME.DEVICES_DIA, null, "dialog.Devices_dia.Window.title", 0),
         /** The DeviceFindAllButton enum */
         DEVICE_FIND_ALL_BUTTON("DeviceFindAllButton", "Devices_dia_deviceFindAllButton", DialogObjectType.Button, null, null, WINDOW, null, "dialog.Devices_dia.DeviceFindAllButton.title", 1),
-        /** The NewBasicContainer enum */
-        NEW_BASIC_CONTAINER("NewBasicContainer", "Devices_dia_newBasicContainer", DialogObjectType.SimpleBlock, null, null, WINDOW, null, "dialog.Devices_dia.NewBasicContainer.title", 0),
         /** The DeviceListClass enum */
         DEVICE_LIST_CLASS("DeviceListClass", "Devices_dia_deviceListClass", DialogObjectType.SimpleBlock, null, Devices_osConst.OS.DEVICE_LIST, WINDOW, null, "dialog.Devices_dia.DeviceListClass.title", 0),
         /** The DevicesClass enum */

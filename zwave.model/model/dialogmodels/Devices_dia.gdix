@@ -47,11 +47,6 @@
 			</Event>
 		</ButtonControl>
 		<SimpleBlock
-			TABSequence="False"
-			id="G1432813062501"
-			name="NewBasicContainer"
-		/>
-		<SimpleBlock
 			CompType="EntityBlock"
 			RoleId="G1432712289898"
 			RoleName="DeviceList"
