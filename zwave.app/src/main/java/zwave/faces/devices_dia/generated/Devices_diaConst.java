@@ -120,6 +120,8 @@ public interface Devices_diaConst {
     public static enum DIALOG implements DialogObjectConstant {
         /** The Window enum */
         WINDOW("Window", "Devices_dia_window", DialogObjectType.WindowBlock, null, null, DIALOG_NAME.DEVICES_DIA, null, "dialog.Devices_dia.Window.title", 0),
+        /** The DeviceFindAllButton enum */
+        DEVICE_FIND_ALL_BUTTON("DeviceFindAllButton", "Devices_dia_deviceFindAllButton", DialogObjectType.Button, null, null, WINDOW, null, "dialog.Devices_dia.DeviceFindAllButton.title", 1),
         /** The NewBasicContainer enum */
         NEW_BASIC_CONTAINER("NewBasicContainer", "Devices_dia_newBasicContainer", DialogObjectType.SimpleBlock, null, null, WINDOW, null, "dialog.Devices_dia.NewBasicContainer.title", 0),
         /** The DeviceListClass enum */
@@ -128,36 +130,26 @@ public interface Devices_diaConst {
         DEVICES_CLASS("DevicesClass", "Devices_dia_devicesClass", DialogObjectType.SimpleBlock, null, Devices_osConst.OS.DEVICES, WINDOW, null, "dialog.Devices_dia.DevicesClass.title", 0),
         /** The DeviceListData enum */
         DEVICE_LIST_DATA("DeviceListData", "Devices_dia_deviceListData", DialogObjectType.SimpleBlock, null, Devices_osConst.OS.DEVICE_LIST, DEVICE_LIST_CLASS, null, "dialog.Devices_dia.DeviceListData.title", 0),
-        /** The DeviceListButtons enum */
-        DEVICE_LIST_BUTTONS("DeviceListButtons", "Devices_dia_deviceListButtons", DialogObjectType.SimpleBlock, null, Devices_osConst.OS.DEVICE_LIST, DEVICE_LIST_CLASS, null, "dialog.Devices_dia.DeviceListButtons.title", 0),
         /** The DeviceList.structureChanged enum */
-        DEVICE_LIST_STRUCTURE_CHANGED("DeviceList.structureChanged", "Devices_dia_deviceList_structureChanged", DialogObjectType.CheckButton, null, Devices_osConst.DEVICE_LIST.STRUCTURE_CHANGED, DEVICE_LIST_DATA, null, "dialog.Devices_dia.DeviceList.structureChanged.title", 3),
+        DEVICE_LIST_STRUCTURE_CHANGED("DeviceList.structureChanged", "Devices_dia_deviceList_structureChanged", DialogObjectType.CheckButton, null, Devices_osConst.DEVICE_LIST.STRUCTURE_CHANGED, DEVICE_LIST_DATA, null, "dialog.Devices_dia.DeviceList.structureChanged.title", 2),
         /** The DeviceListUpdateTimeLabel enum */
         DEVICE_LIST_UPDATE_TIME_LABEL("DeviceListUpdateTimeLabel", "Devices_dia_deviceListUpdateTimeLabel", DialogObjectType.Label, null, null, DEVICE_LIST_DATA, "DEVICE_LIST_UPDATE_TIME_LABEL", "dialog.Devices_dia.DeviceListUpdateTimeLabel.title", 0),
         /** The DeviceList.updateTime enum */
-        DEVICE_LIST_UPDATE_TIME("DeviceList.updateTime", "Devices_dia_deviceList_updateTime", DialogObjectType.TextField, null, Devices_osConst.DEVICE_LIST.UPDATE_TIME, DEVICE_LIST_DATA, "DEVICE_LIST_UPDATE_TIME_LABEL", "dialog.Devices_dia.DeviceList.updateTime.title", 4),
-        /** The DeviceFindAllButton enum */
-        DEVICE_FIND_ALL_BUTTON("DeviceFindAllButton", "Devices_dia_deviceFindAllButton", DialogObjectType.Button, null, null, DEVICE_LIST_BUTTONS, null, "dialog.Devices_dia.DeviceFindAllButton.title", 1),
-        /** The DeviceDetailButton enum */
-        DEVICE_DETAIL_BUTTON("DeviceDetailButton", "Devices_dia_deviceDetailButton", DialogObjectType.Button, null, null, DEVICE_LIST_BUTTONS, null, "dialog.Devices_dia.DeviceDetailButton.title", 2),
+        DEVICE_LIST_UPDATE_TIME("DeviceList.updateTime", "Devices_dia_deviceList_updateTime", DialogObjectType.TextField, null, Devices_osConst.DEVICE_LIST.UPDATE_TIME, DEVICE_LIST_DATA, "DEVICE_LIST_UPDATE_TIME_LABEL", "dialog.Devices_dia.DeviceList.updateTime.title", 3),
         /** The DevicesTable enum */
-        DEVICES_TABLE("DevicesTable", "Devices_dia_devicesTable", DialogObjectType.TableBlock, null, Devices_osConst.OS.DEVICES, DEVICES_CLASS, null, "dialog.Devices_dia.DevicesTable.title", 5),
-        /** The DevicesIdLabel enum */
-        DEVICES_ID_LABEL("DevicesIdLabel", "Devices_dia_devicesIdLabel", DialogObjectType.Label, null, null, DEVICES_TABLE, "DEVICES_ID_LABEL", "dialog.Devices_dia.DevicesIdLabel.title", 0),
+        DEVICES_TABLE("DevicesTable", "Devices_dia_devicesTable", DialogObjectType.TableBlock, null, Devices_osConst.OS.DEVICES, DEVICES_CLASS, null, "dialog.Devices_dia.DevicesTable.title", 4),
         /** The devices.id enum */
-        DEVICES_ID("devices.id", "Devices_dia_devices_id", DialogObjectType.TextField, null, Devices_osConst.DEVICES.ID, DEVICES_TABLE, "DEVICES_ID_LABEL", "dialog.Devices_dia.devices.id.title", 0),
-        /** The DevicesDeviceTypeLabel enum */
-        DEVICES_DEVICE_TYPE_LABEL("DevicesDeviceTypeLabel", "Devices_dia_devicesDeviceTypeLabel", DialogObjectType.Label, null, null, DEVICES_TABLE, "DEVICES_DEVICE_TYPE_LABEL", "dialog.Devices_dia.DevicesDeviceTypeLabel.title", 0),
+        DEVICES_ID("devices.id", "Devices_dia_devices_id", DialogObjectType.TextField, null, Devices_osConst.DEVICES.ID, DEVICES_TABLE, null, "dialog.Devices_dia.devices.id.title", 0),
         /** The devices.deviceType enum */
-        DEVICES_DEVICE_TYPE("devices.deviceType", "Devices_dia_devices_deviceType", DialogObjectType.TextField, null, Devices_osConst.DEVICES.DEVICE_TYPE, DEVICES_TABLE, "DEVICES_DEVICE_TYPE_LABEL", "dialog.Devices_dia.devices.deviceType.title", 0),
+        DEVICES_DEVICE_TYPE("devices.deviceType", "Devices_dia_devices_deviceType", DialogObjectType.TextField, null, Devices_osConst.DEVICES.DEVICE_TYPE, DEVICES_TABLE, null, "dialog.Devices_dia.devices.deviceType.title", 0),
         /** The MetricsProbeTitleLabel enum */
         METRICS_PROBE_TITLE_LABEL("MetricsProbeTitleLabel", "Devices_dia_metricsProbeTitleLabel", DialogObjectType.Label, null, null, DEVICES_TABLE, "METRICS_PROBE_TITLE_LABEL", "dialog.Devices_dia.MetricsProbeTitleLabel.title", 0),
         /** The metrics.probeTitle enum */
         METRICS_PROBE_TITLE("metrics.probeTitle", "Devices_dia_metrics_probeTitle", DialogObjectType.TextField, null, Devices_osConst.METRICS.PROBE_TITLE, DEVICES_TABLE, "METRICS_PROBE_TITLE_LABEL", "dialog.Devices_dia.metrics.probeTitle.title", 0),
-        /** The DevicesUpdateTimeLabel enum */
-        DEVICES_UPDATE_TIME_LABEL("DevicesUpdateTimeLabel", "Devices_dia_devicesUpdateTimeLabel", DialogObjectType.Label, null, null, DEVICES_TABLE, "DEVICES_UPDATE_TIME_LABEL", "dialog.Devices_dia.DevicesUpdateTimeLabel.title", 0),
+        /** The metrics.level enum */
+        METRICS_LEVEL("metrics.level", "Devices_dia_metrics_level", DialogObjectType.TextField, null, Devices_osConst.METRICS.LEVEL, DEVICES_TABLE, null, "dialog.Devices_dia.metrics.level.title", 0),
         /** The devices.updateTime enum */
-        DEVICES_UPDATE_TIME("devices.updateTime", "Devices_dia_devices_updateTime", DialogObjectType.TextField, null, Devices_osConst.DEVICES.UPDATE_TIME, DEVICES_TABLE, "DEVICES_UPDATE_TIME_LABEL", "dialog.Devices_dia.devices.updateTime.title", 0),
+        DEVICES_UPDATE_TIME("devices.updateTime", "Devices_dia_devices_updateTime", DialogObjectType.TextField, null, Devices_osConst.DEVICES.UPDATE_TIME, DEVICES_TABLE, null, "dialog.Devices_dia.devices.updateTime.title", 0),
         ;
 
         /** The name of the dialog object as defined in the g9 dialog model. */

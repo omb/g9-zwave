@@ -156,6 +156,24 @@ public abstract class Devices_diaDefaultBean extends FacesDialogBean {
         setField(Devices_diaConst.DIALOG.METRICS_PROBE_TITLE, metrics_probeTitle);
     }
 
+    /**
+     * Get the metrics_level property.
+     *
+     * @return the metrics_level property
+     */
+    public String getMetrics_level() {
+        return (String) getField(Devices_diaConst.DIALOG.METRICS_LEVEL);
+    }
+
+    /**
+     * Set the metrics_level property.
+     *
+     * @param metrics_level the new value for the metrics_level property
+     */
+    public void setMetrics_level(String metrics_level) {
+        setField(Devices_diaConst.DIALOG.METRICS_LEVEL, metrics_level);
+    }
+
     private static final NumberConverter devices_updateTime_converter;
     static {
         devices_updateTime_converter = new NumberConverter();
@@ -284,16 +302,6 @@ public abstract class Devices_diaDefaultBean extends FacesDialogBean {
     public void deviceFindAllButton_Clicked(ActionEvent event) {
         DialogObjectConstant field = Devices_diaConst.DIALOG.DEVICE_FIND_ALL_BUTTON;
         dispatchEvent(field, "Clicked", "findAllDevice");
-    }
-
-    /**
-     * The event handler for the Clicked event on the DeviceDetailButton Button.
-     *
-     * @param event the JSF event
-     */
-    public void deviceDetailButton_Clicked(ActionEvent event) {
-        DialogObjectConstant field = Devices_diaConst.DIALOG.DEVICE_DETAIL_BUTTON;
-        dispatchEvent(field, "Clicked", "openDeviceDetail");
     }
 
     /**

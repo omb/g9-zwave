@@ -22,6 +22,18 @@
                   <h:graphicImage alt="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.Close.alt')}" value="#{resource['images:close.png']}" />
                 </ace:pushButton>
               </td>
+              <td style="width:11px;min-width:11px;" />
+              <td style="width: 1px;">
+                <ace:pushButton actionListener="#{devicedetail_dia.refresh_Clicked}"
+                                id="DeviceDetail_dia_refresh"
+                                alt="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.Refresh.alt')}"
+                                styleClass="StandardShadowIn gvaButtonImage ${devicedetail_dia.shown['DeviceDetail_dia_refresh'] ? '' : 'gvaHidden'}"
+                                disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_refresh']}"
+                                tabindex="16"
+                                 >
+                  <h:graphicImage alt="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.Refresh.alt')}" value="#{resource['images:findSmall.gif']}" />
+                </ace:pushButton>
+              </td>
               <td/>
             </tr>
           </table>
@@ -54,7 +66,7 @@
                         </label>
                       </td>
                       <td style="padding-left: 6px;">
-                        <h:inputText size="20"
+                        <h:inputText size="25"
                                      id="DeviceDetail_dia_device_id"
                                      styleClass="StandardShadowIn gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_device_id'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_device_id'] ? 'gvaMandatory' : ''}"
                                      disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_device_id']}"
@@ -79,7 +91,7 @@
                       <td style="padding-left: 6px;">
                         <h:inputText size="20"
                                      id="DeviceDetail_dia_device_deviceType"
-                                     styleClass="StandardShadowIn gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_device_deviceType'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_device_deviceType'] ? 'gvaMandatory' : ''}"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_device_deviceType'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_device_deviceType'] ? 'gvaMandatory' : ''}"
                                      disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_device_deviceType']}"
                                      tabindex="2"
                                      readonly="${!devicedetail_dia.editable['DeviceDetail_dia_device_deviceType']}"
@@ -111,7 +123,7 @@
                       <td style="padding-left: 6px;">
                         <h:inputText maxlength="11" size="11"
                                      id="DeviceDetail_dia_device_updateTime"
-                                     styleClass="StandardShadowIn gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_device_updateTime'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_device_updateTime'] ? 'gvaMandatory' : ''}"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_device_updateTime'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_device_updateTime'] ? 'gvaMandatory' : ''}"
                                      disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_device_updateTime']}"
                                      tabindex="3"
                                      readonly="${!devicedetail_dia.editable['DeviceDetail_dia_device_updateTime']}"
@@ -134,7 +146,7 @@
                       <td style="padding-left: 6px;">
                         <h:inputText size="20"
                                      id="DeviceDetail_dia_metrics_probeTitle"
-                                     styleClass="StandardShadowIn gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_probeTitle'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_probeTitle'] ? 'gvaMandatory' : ''}"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_probeTitle'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_probeTitle'] ? 'gvaMandatory' : ''}"
                                      disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_probeTitle']}"
                                      tabindex="4"
                                      readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_probeTitle']}"
@@ -166,7 +178,7 @@
                       <td style="padding-left: 6px;">
                         <h:inputText size="20"
                                      id="DeviceDetail_dia_metrics_scaleTitle"
-                                     styleClass="StandardShadowIn gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_scaleTitle'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_scaleTitle'] ? 'gvaMandatory' : ''}"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_scaleTitle'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_scaleTitle'] ? 'gvaMandatory' : ''}"
                                      disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_scaleTitle']}"
                                      tabindex="5"
                                      readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_scaleTitle']}"
@@ -188,7 +200,7 @@
                       <td style="padding-left: 6px;">
                         <h:inputText size="20"
                                      id="DeviceDetail_dia_metrics_level"
-                                     styleClass="StandardShadowIn gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_level'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_level'] ? 'gvaMandatory' : ''}"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_level'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_level'] ? 'gvaMandatory' : ''}"
                                      disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_level']}"
                                      tabindex="6"
                                      readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_level']}"
@@ -220,7 +232,7 @@
                       <td style="padding-left: 6px;">
                         <h:inputText size="20"
                                      id="DeviceDetail_dia_metrics_icon"
-                                     styleClass="StandardShadowIn gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_icon'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_icon'] ? 'gvaMandatory' : ''}"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_icon'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_icon'] ? 'gvaMandatory' : ''}"
                                      disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_icon']}"
                                      tabindex="7"
                                      readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_icon']}"
@@ -240,9 +252,9 @@
                         </label>
                       </td>
                       <td style="padding-left: 6px;">
-                        <h:inputText size="20"
+                        <h:inputText size="30"
                                      id="DeviceDetail_dia_metrics_title"
-                                     styleClass="StandardShadowIn gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_title'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_title'] ? 'gvaMandatory' : ''}"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_title'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_title'] ? 'gvaMandatory' : ''}"
                                      disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_title']}"
                                      tabindex="8"
                                      readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_title']}"
@@ -274,7 +286,7 @@
                       <td style="padding-left: 6px;">
                         <h:inputText size="20"
                                      id="DeviceDetail_dia_metrics_mode"
-                                     styleClass="StandardShadowIn gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_mode'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_mode'] ? 'gvaMandatory' : ''}"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_mode'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_mode'] ? 'gvaMandatory' : ''}"
                                      disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_mode']}"
                                      tabindex="9"
                                      readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_mode']}"

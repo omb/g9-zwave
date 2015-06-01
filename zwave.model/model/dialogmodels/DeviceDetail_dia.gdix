@@ -45,6 +45,21 @@
 					<Reference name="Method" IdRef="G1432712289706"/>
 				</Event>
 			</ButtonControl>
+			<ButtonControl
+				HasIcon="True"
+				ImageId="G41b5b14c0296188"
+				ImageName="FindAll"
+				TABSequence="True"
+				Title="Refresh"
+				id="G1433147671645"
+				name="Refresh">
+				<Event
+					TriggerType="Clicked"
+					id="G1433147671646"
+					name="Clicked">
+					<Reference name="Method" IdRef="G1432821131552"/>
+				</Event>
+			</ButtonControl>
 		</SimpleBlock>
 		<SimpleBlock
 			CompType="EntityBlock"
@@ -73,6 +88,7 @@
 					AttributeName="id"
 					Editable="True"
 					FrameCode="Inherit"
+					NumberOfCharacters="25"
 					RoleId="G1432712289623"
 					RoleName="Device"
 					TABSequence="True"
@@ -95,9 +111,13 @@
 				<VarField
 					AttributeID="G1432712289625"
 					AttributeName="deviceType"
+					Editable="False"
 					FrameCode="Inherit"
+					HorizontalFlexibility="Stretched"
 					RoleId="G1432712289623"
 					RoleName="Device"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
 					TABSequence="True"
 					VarFieldType="Text"
 					id="G1432712289682"
@@ -112,10 +132,13 @@
 				<VarField
 					AttributeID="G1432712289626"
 					AttributeName="updateTime"
-					Editable="True"
+					Editable="False"
 					FrameCode="Inherit"
+					HorizontalFlexibility="Stretched"
 					RoleId="G1432712289623"
 					RoleName="Device"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
 					TABSequence="True"
 					VarFieldType="Text"
 					id="G1432712289684"
@@ -130,10 +153,13 @@
 				<VarField
 					AttributeID="G1432712289629"
 					AttributeName="probeTitle"
-					Editable="True"
+					Editable="False"
 					FrameCode="Inherit"
+					HorizontalFlexibility="Stretched"
 					RoleId="G1432712289628"
 					RoleName="metrics"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
 					TABSequence="True"
 					VarFieldType="Text"
 					id="G1432712289686"
@@ -148,10 +174,13 @@
 				<VarField
 					AttributeID="G1432712289630"
 					AttributeName="scaleTitle"
-					Editable="True"
+					Editable="False"
 					FrameCode="Inherit"
+					HorizontalFlexibility="Stretched"
 					RoleId="G1432712289628"
 					RoleName="metrics"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
 					TABSequence="True"
 					VarFieldType="Text"
 					id="G1432712289688"
@@ -166,10 +195,13 @@
 				<VarField
 					AttributeID="G1432712289631"
 					AttributeName="level"
-					Editable="True"
+					Editable="False"
 					FrameCode="Inherit"
+					HorizontalFlexibility="Stretched"
 					RoleId="G1432712289628"
 					RoleName="metrics"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
 					TABSequence="True"
 					VarFieldType="Text"
 					id="G1432712289690"
@@ -184,10 +216,13 @@
 				<VarField
 					AttributeID="G1432712289632"
 					AttributeName="icon"
-					Editable="True"
+					Editable="False"
 					FrameCode="Inherit"
+					HorizontalFlexibility="Stretched"
 					RoleId="G1432712289628"
 					RoleName="metrics"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
 					TABSequence="True"
 					VarFieldType="Text"
 					id="G1432712289692"
@@ -202,10 +237,13 @@
 				<VarField
 					AttributeID="G1432712289633"
 					AttributeName="title"
-					Editable="True"
+					Editable="False"
 					FrameCode="Inherit"
+					NumberOfCharacters="30"
 					RoleId="G1432712289628"
 					RoleName="metrics"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
 					TABSequence="True"
 					VarFieldType="Text"
 					id="G1432712289694"
@@ -220,10 +258,13 @@
 				<VarField
 					AttributeID="G1432712289634"
 					AttributeName="mode"
-					Editable="True"
+					Editable="False"
 					FrameCode="Inherit"
+					HorizontalFlexibility="Stretched"
 					RoleId="G1432712289628"
 					RoleName="metrics"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
 					TABSequence="True"
 					VarFieldType="Text"
 					id="G1432712289696"
@@ -331,6 +372,7 @@
 		<Reference name="TabSequence" IdRef="G1432821131458"/>
 		<Reference name="TabSequence" IdRef="G1432821131467"/>
 		<Reference name="TabSequence" IdRef="G1432821131470"/>
+		<Reference name="TabSequence" IdRef="G1433147671645"/>
 	</WindowBlock>
 	<DlgMethod
 		id="G1432712289706"

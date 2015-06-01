@@ -128,6 +128,8 @@ public interface DeviceDetail_diaConst {
         COMMANDS("Commands", "DeviceDetail_dia_commands", DialogObjectType.SimpleBlock, null, null, WINDOW, null, "dialog.DeviceDetail_dia.Commands.title", 0),
         /** The Close enum */
         CLOSE("Close", "DeviceDetail_dia_close", DialogObjectType.Button, null, null, BUTTONS, null, "dialog.DeviceDetail_dia.Close.title", 15),
+        /** The Refresh enum */
+        REFRESH("Refresh", "DeviceDetail_dia_refresh", DialogObjectType.Button, null, null, BUTTONS, null, "dialog.DeviceDetail_dia.Refresh.title", 16),
         /** The DeviceData enum */
         DEVICE_DATA("DeviceData", "DeviceDetail_dia_deviceData", DialogObjectType.SimpleBlock, null, DeviceDetail_osConst.OS.DEVICE, DEVICE_CLASS, null, "dialog.DeviceDetail_dia.DeviceData.title", 0),
         /** The DeviceIdLabel enum */

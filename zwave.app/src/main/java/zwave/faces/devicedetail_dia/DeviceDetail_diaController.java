@@ -2,13 +2,17 @@
 
 package zwave.faces.devicedetail_dia;
 
+import me.zwave.vdev.Device;
 import no.g9.client.core.action.CheckType;
+import no.g9.client.core.action.DisplayableHookAdapter;
 import no.g9.client.core.action.EventContext;
 import no.g9.client.core.controller.DialogSetupValue;
 import no.g9.client.core.controller.Interceptor;
 import no.g9.os.RoleConstant;
+import no.g9.support.ActionType;
 import zwave.faces.devicedetail_dia.generated.DeviceDetail_diaConst.DIALOG;
 import zwave.faces.devicedetail_dia.generated.DeviceDetail_diaDefaultController;
+import zwave.faces.devicedetail_dia.generated.DeviceDetail_diaRemoteServices;
 import zwave.os.devicedetail_os.generated.DeviceDetail_osConst;
 
 /**
@@ -23,6 +27,7 @@ public final class DeviceDetail_diaController extends DeviceDetail_diaDefaultCon
      */
     @Override
     public void init() {
+        registerHook(DeviceDetail_diaRemoteServices.SERVICE.Z_AUTOMATION_GET_DEVICE, ActionType.INVOKE, new FindHook());
         registerInterceptor(CheckType.INVOKE, new MyInterceptor(DeviceDetail_osConst.OS.DEVICE));
         registerInterceptor(CheckType.INVOKE, new MyInterceptor(DeviceDetail_osConst.OS.COMMAND));
         registerInterceptor(CheckType.CLOSE, new MyInterceptor(DeviceDetail_osConst.OS.DEVICE));
@@ -68,6 +73,21 @@ public final class DeviceDetail_diaController extends DeviceDetail_diaDefaultCon
         @Override
         public String getSetupValue() {
             return deviceId;
+        }
+
+    }
+
+    class FindHook extends DisplayableHookAdapter<Device> {
+
+        @Override
+        public void performed(Device result) {
+            if (result.getDeviceType().startsWith("switch")) {
+                getDialogView().enable(DIALOG.COMMANDS);
+            }
+            else {
+                getDialogView().disable(DIALOG.COMMANDS);
+            }
+            super.performed(result);
         }
 
     }

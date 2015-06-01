@@ -216,6 +216,7 @@ public abstract class Devices_diaDefaultView extends FacesDialogView {
         addRoleField(Devices_osConst.OS.DEVICES, Devices_diaConst.DIALOG.DEVICES_ID);
         addRoleField(Devices_osConst.OS.DEVICES, Devices_diaConst.DIALOG.DEVICES_DEVICE_TYPE);
         addRoleField(Devices_osConst.OS.METRICS, Devices_diaConst.DIALOG.METRICS_PROBE_TITLE);
+        addRoleField(Devices_osConst.OS.METRICS, Devices_diaConst.DIALOG.METRICS_LEVEL);
         addRoleField(Devices_osConst.OS.DEVICES, Devices_diaConst.DIALOG.DEVICES_UPDATE_TIME);
         addRoleList(Devices_osConst.OS.DEVICES, Devices_diaConst.DIALOG.DEVICES_TABLE, new FacesTableModel<DevicesTableRow>(DevicesTableRow.getColumnDefinitions(), getViewModel()));
         initDevicesTable();
@@ -240,6 +241,9 @@ public abstract class Devices_diaDefaultView extends FacesDialogView {
         }
         if (Comparable.class.isAssignableFrom(Devices_diaConst.DIALOG.METRICS_PROBE_TITLE.getAttribute().getAttributeType())) {
             comparators.add(new ListRowComparator<DevicesTableRow>(Devices_diaConst.DIALOG.METRICS_PROBE_TITLE, 3, ListRowComparator.Sorting.NO_SORT));
+        }
+        if (Comparable.class.isAssignableFrom(Devices_diaConst.DIALOG.METRICS_LEVEL.getAttribute().getAttributeType())) {
+            comparators.add(new ListRowComparator<DevicesTableRow>(Devices_diaConst.DIALOG.METRICS_LEVEL, 4, ListRowComparator.Sorting.NO_SORT));
         }
         if (Comparable.class.isAssignableFrom(Devices_diaConst.DIALOG.DEVICES_UPDATE_TIME.getAttribute().getAttributeType())) {
             comparators.add(new ListRowComparator<DevicesTableRow>(Devices_diaConst.DIALOG.DEVICES_UPDATE_TIME, 2, ListRowComparator.Sorting.NO_SORT));

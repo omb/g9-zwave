@@ -140,6 +140,14 @@ public abstract class DeviceDetail_diaDefaultView extends FacesDialogView {
     @Override
     public void initView() {
         setShown(true);
+        setEditable(DeviceDetail_diaConst.DIALOG.DEVICE_DEVICE_TYPE, false);
+        setEditable(DeviceDetail_diaConst.DIALOG.DEVICE_UPDATE_TIME, false);
+        setEditable(DeviceDetail_diaConst.DIALOG.METRICS_PROBE_TITLE, false);
+        setEditable(DeviceDetail_diaConst.DIALOG.METRICS_SCALE_TITLE, false);
+        setEditable(DeviceDetail_diaConst.DIALOG.METRICS_LEVEL, false);
+        setEditable(DeviceDetail_diaConst.DIALOG.METRICS_ICON, false);
+        setEditable(DeviceDetail_diaConst.DIALOG.METRICS_TITLE, false);
+        setEditable(DeviceDetail_diaConst.DIALOG.METRICS_MODE, false);
         addRoleField(DeviceDetail_osConst.OS.DEVICE, DeviceDetail_diaConst.DIALOG.DEVICE_ID);
         addRoleField(DeviceDetail_osConst.OS.DEVICE, DeviceDetail_diaConst.DIALOG.DEVICE_DEVICE_TYPE);
         addRoleField(DeviceDetail_osConst.OS.DEVICE, DeviceDetail_diaConst.DIALOG.DEVICE_UPDATE_TIME);

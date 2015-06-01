@@ -312,6 +312,16 @@ public abstract class DeviceDetail_diaDefaultBean extends FacesDialogBean {
     }
 
     /**
+     * The event handler for the Clicked event on the Refresh Button.
+     *
+     * @param event the JSF event
+     */
+    public void refresh_Clicked(ActionEvent event) {
+        DialogObjectConstant field = DeviceDetail_diaConst.DIALOG.REFRESH;
+        dispatchEvent(field, "Clicked", "getDevice");
+    }
+
+    /**
      * The event handler for the Value Changed event on the Device.id TextField.
      *
      * @param event the JSF event

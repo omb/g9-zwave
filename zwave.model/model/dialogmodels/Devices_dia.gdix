@@ -31,6 +31,21 @@
 			name="WM Close">
 			<Reference name="Method" IdRef="G1432712289667"/>
 		</Event>
+		<ButtonControl
+			HasIcon="True"
+			ImageId="G41b5b14c0296188"
+			ImageName="FindAll"
+			TABSequence="True"
+			Title="Clear"
+			id="G1432712289659"
+			name="DeviceFindAllButton">
+			<Event
+				TriggerType="Clicked"
+				id="G1432712289662"
+				name="Clicked">
+				<Reference name="Method" IdRef="G1432712289660"/>
+			</Event>
+		</ButtonControl>
 		<SimpleBlock
 			TABSequence="False"
 			id="G1432813062501"
@@ -82,45 +97,6 @@
 					name="updateTime"
 				/>
 			</SimpleBlock>
-			<SimpleBlock
-				CompType="ButtonBlock"
-				RoleId="G1432712289898"
-				RoleName="DeviceList"
-				TABSequence="False"
-				Title="DeviceList"
-				id="G1432813062508"
-				name="DeviceListButtons">
-				<ButtonControl
-					HasIcon="True"
-					ImageId="G41b5b14c0296188"
-					ImageName="FindAll"
-					TABSequence="True"
-					Title="Clear"
-					id="G1432712289659"
-					name="DeviceFindAllButton">
-					<Event
-						TriggerType="Clicked"
-						id="G1432712289662"
-						name="Clicked">
-						<Reference name="Method" IdRef="G1432712289660"/>
-					</Event>
-				</ButtonControl>
-				<ButtonControl
-					HasIcon="True"
-					ImageId="G41b5b14c0296184"
-					ImageName="Preview"
-					TABSequence="True"
-					Title="Save"
-					id="G1432712289663"
-					name="DeviceDetailButton">
-					<Event
-						TriggerType="Clicked"
-						id="G1432712289666"
-						name="Clicked">
-						<Reference name="Method" IdRef="G1432712289664"/>
-					</Event>
-				</ButtonControl>
-			</SimpleBlock>
 		</SimpleBlock>
 		<SimpleBlock
 			CompType="EntityBlock"
@@ -138,17 +114,12 @@
 				Title="devices"
 				id="G1432813062514"
 				name="DevicesTable">
-				<LabelControl
-					TABSequence="False"
-					id="G1432813062515"
-					name="DevicesIdLabel">
-					<Reference name="GeneratedBy" IdRef="G1432813062516"/>
-				</LabelControl>
 				<VarField
 					AttributeID="G1432712289903"
 					AttributeName="id"
 					Editable="True"
 					FrameCode="Inherit"
+					NumberOfCharacters="25"
 					RoleId="G1432712289902"
 					RoleName="devices"
 					TABSequence="False"
@@ -156,12 +127,6 @@
 					id="G1432813062516"
 					name="id"
 				/>
-				<LabelControl
-					TABSequence="False"
-					id="G1432813062517"
-					name="DevicesDeviceTypeLabel">
-					<Reference name="GeneratedBy" IdRef="G1432813062518"/>
-				</LabelControl>
 				<VarField
 					AttributeID="G1432712289904"
 					AttributeName="deviceType"
@@ -191,12 +156,16 @@
 					id="G1433147671642"
 					name="probeTitle"
 				/>
-				<LabelControl
+				<VarField
+					AttributeID="G1433147671638"
+					AttributeName="level"
+					RoleId="G1433147671635"
+					RoleName="metrics"
 					TABSequence="False"
-					id="G1432813062519"
-					name="DevicesUpdateTimeLabel">
-					<Reference name="GeneratedBy" IdRef="G1432813062520"/>
-				</LabelControl>
+					VarFieldType="Text"
+					id="G1433147671644"
+					name="level"
+				/>
 				<VarField
 					AttributeID="G1432712289905"
 					AttributeName="updateTime"
@@ -219,10 +188,10 @@
 				<Reference name="SortSequence" IdRef="G1432813062518"/>
 				<Reference name="SortSequence" IdRef="G1432813062520"/>
 				<Reference name="SortSequence" IdRef="G1433147671642"/>
+				<Reference name="SortSequence" IdRef="G1433147671644"/>
 			</TableBlock>
 		</SimpleBlock>
 		<Reference name="TabSequence" IdRef="G1432712289659"/>
-		<Reference name="TabSequence" IdRef="G1432712289663"/>
 		<Reference name="TabSequence" IdRef="G1432813062505"/>
 		<Reference name="TabSequence" IdRef="G1432813062507"/>
 		<Reference name="TabSequence" IdRef="G1432813062514"/>
