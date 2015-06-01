@@ -3,8 +3,11 @@
 package zwave.faces.devicedetail_dia;
 
 import no.g9.client.core.action.CheckType;
+import no.g9.client.core.action.EventContext;
+import no.g9.client.core.controller.DialogSetupValue;
 import no.g9.client.core.controller.Interceptor;
 import no.g9.os.RoleConstant;
+import zwave.faces.devicedetail_dia.generated.DeviceDetail_diaConst.DIALOG;
 import zwave.faces.devicedetail_dia.generated.DeviceDetail_diaDefaultController;
 import zwave.os.devicedetail_os.generated.DeviceDetail_osConst;
 
@@ -21,9 +24,25 @@ public final class DeviceDetail_diaController extends DeviceDetail_diaDefaultCon
     @Override
     public void init() {
         registerInterceptor(CheckType.INVOKE, new MyInterceptor(DeviceDetail_osConst.OS.DEVICE));
+        registerInterceptor(CheckType.INVOKE, new MyInterceptor(DeviceDetail_osConst.OS.COMMAND));
+        registerInterceptor(CheckType.CLOSE, new MyInterceptor(DeviceDetail_osConst.OS.DEVICE));
+        registerInterceptor(CheckType.CLOSE, new MyInterceptor(DeviceDetail_osConst.OS.COMMAND));
     }
 
-    @SuppressWarnings("javadoc")
+    @Override
+    public void setup(DialogSetupValue<?> setupValue) {
+        if(setupValue instanceof DeviceSetup) {
+            String deviceId= (String) setupValue.getSetupValue();
+            findDevice(deviceId);
+        }
+    }
+
+    private void findDevice(String deviceId) {
+        setFieldValue(DIALOG.DEVICE_ID, deviceId);
+        final EventContext event= new EventContext("getDevice", DIALOG.DEVICE_ID, "Invoke");
+        super.getDevice(event);
+    }
+
     class MyInterceptor extends Interceptor {
 
         public MyInterceptor(RoleConstant role) {
@@ -35,6 +54,22 @@ public final class DeviceDetail_diaController extends DeviceDetail_diaDefaultCon
             return DIRECTIVE.CONTINUE;
         }
         
+    }
+
+    public class DeviceSetup implements DialogSetupValue<String> {
+
+        private String deviceId;
+
+        public DeviceSetup(String deviceId) {
+            super();
+            this.deviceId = deviceId;
+        }
+
+        @Override
+        public String getSetupValue() {
+            return deviceId;
+        }
+
     }
 
 }
