@@ -23,6 +23,8 @@ public class DevicesTransport implements CycleRecoverable {
     private String deviceType;
     @XmlElement
     private int updateTime;
+    @XmlElement
+    private MetricsTransport metrics;
 
     /** Default constructor. */
     public DevicesTransport() {
@@ -81,6 +83,24 @@ public class DevicesTransport implements CycleRecoverable {
      */
     public void setUpdateTime(final int aUpdateTime) {
         updateTime = aUpdateTime;
+    }
+
+    /**
+     * Access method for metrics.
+     *
+     * @return the current value of metrics
+     */
+    public MetricsTransport getMetrics() {
+        return metrics;
+    }
+
+    /**
+     * Access method for metrics.
+     *
+     * @param aMetrics the new value for metrics
+     */
+    public void setMetrics(final MetricsTransport aMetrics) {
+        metrics = aMetrics;
     }
 
 

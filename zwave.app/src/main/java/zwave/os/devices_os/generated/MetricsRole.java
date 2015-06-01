@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import me.zwave.vdev.Device;
 import me.zwave.vdev.DeviceMetrics;
 
 import no.g9.os.AbstractOSRole;
@@ -20,12 +19,12 @@ import no.g9.os.RelationType;
 import no.g9.os.RoleConstant;
 
 /**
- * The class representing the devices role in the object selection. This class
+ * The class representing the metrics role in the object selection. This class
  * contains various methods for accessing domain objects represented by this role.
  * This file will be overwritten the next time it is generated from g9.
  */
 @SuppressWarnings("all")
-class DevicesRole extends AbstractOSRole<Device> {
+class MetricsRole extends AbstractOSRole<DeviceMetrics> {
 
     /**
      * Constructs a new OSRole.
@@ -34,29 +33,29 @@ class DevicesRole extends AbstractOSRole<Device> {
      * @param relationType the type of relation
      * @param cardinality the relation cardinality
      */
-    protected DevicesRole(OSRole<?> parent,
+    protected MetricsRole(OSRole<?> parent,
             RelationType relationType, RelationCardinality cardinality) {
 
-        super(parent, relationType, cardinality, Devices_osConst.OS.DEVICES);
+        super(parent, relationType, cardinality, Devices_osConst.OS.METRICS);
 
     }
 
-    public Device createNewInstance() {
-        return new Device();
+    public DeviceMetrics createNewInstance() {
+        return new DeviceMetrics();
     }
 
-    public Class<Device> getDomainClass() {
-        return Device.class;
+    public Class<DeviceMetrics> getDomainClass() {
+        return DeviceMetrics.class;
     }
 
     public AttributeConstant[] getAttributeConstants() {
-        return Devices_osConst.DEVICES.values();
+        return Devices_osConst.METRICS.values();
     }
 
     public List<Key> getKeys() {
         if (keys == null) {
             keys = new ArrayList<Key>();
-            for (Key key : Devices_osConst.DEVICES.getKeys()) {
+            for (Key key : Devices_osConst.METRICS.getKeys()) {
                 keys.add(key);
             }
         }
@@ -68,7 +67,7 @@ class DevicesRole extends AbstractOSRole<Device> {
     }
 
     public boolean isUpRelated() {
-        return false;
+        return true;
     }
 
     public boolean isParentMany() {
@@ -80,28 +79,43 @@ class DevicesRole extends AbstractOSRole<Device> {
     }
 
     public AttributeConstant getAttributeConstant(String attributeName) {
-        if ("id".equals(attributeName))
-            return Devices_osConst.DEVICES.ID;
-        if ("deviceType".equals(attributeName))
-            return Devices_osConst.DEVICES.DEVICE_TYPE;
-        if ("updateTime".equals(attributeName))
-            return Devices_osConst.DEVICES.UPDATE_TIME;
+        if ("probeTitle".equals(attributeName))
+            return Devices_osConst.METRICS.PROBE_TITLE;
+        if ("scaleTitle".equals(attributeName))
+            return Devices_osConst.METRICS.SCALE_TITLE;
+        if ("level".equals(attributeName))
+            return Devices_osConst.METRICS.LEVEL;
+        if ("icon".equals(attributeName))
+            return Devices_osConst.METRICS.ICON;
+        if ("title".equals(attributeName))
+            return Devices_osConst.METRICS.TITLE;
+        if ("mode".equals(attributeName))
+            return Devices_osConst.METRICS.MODE;
         return null;
     }
 
     public void setValue(Object domObj, AttributeConstant attribute, Object value) {
-        Device domainObject = (Device) domObj;
-        if (attribute instanceof Devices_osConst.DEVICES) {
-            Devices_osConst.DEVICES attributeEnum = (Devices_osConst.DEVICES) attribute;
+        DeviceMetrics domainObject = (DeviceMetrics) domObj;
+        if (attribute instanceof Devices_osConst.METRICS) {
+            Devices_osConst.METRICS attributeEnum = (Devices_osConst.METRICS) attribute;
             switch (attributeEnum) {
-                case ID:
-                    domainObject.setId((String) value);
+                case PROBE_TITLE:
+                    domainObject.setProbeTitle((String) value);
                     return;
-                case DEVICE_TYPE:
-                    domainObject.setDeviceType((String) value);
+                case SCALE_TITLE:
+                    domainObject.setScaleTitle((String) value);
                     return;
-                case UPDATE_TIME:
-                    domainObject.setUpdateTime(value != null ? ((Integer) value).intValue() : 0);
+                case LEVEL:
+                    domainObject.setLevel((String) value);
+                    return;
+                case ICON:
+                    domainObject.setIcon((String) value);
+                    return;
+                case TITLE:
+                    domainObject.setTitle((String) value);
+                    return;
+                case MODE:
+                    domainObject.setMode((String) value);
                     return;
                 default:
                     throw new NoSuchAttributeException("Unknown attribute " +
@@ -114,7 +128,7 @@ class DevicesRole extends AbstractOSRole<Device> {
             setRelatedValue(domObj, attribute, value);
         } else {
             throw new NoSuchAttributeException("Unknown attribute " + attribute +
-                    ". devices is not on attribute path.");
+                    ". metrics is not on attribute path.");
         }
 
     }
@@ -123,19 +137,25 @@ class DevicesRole extends AbstractOSRole<Device> {
      * @see no.g9.os.OSRole#getValue(java.lang.Object, no.esito.util.AttributeConstant)
      */
     public Object getValue(Object domObj, AttributeConstant attribute) {
-        Device domainObject = (Device) domObj;
+        DeviceMetrics domainObject = (DeviceMetrics) domObj;
         if (domainObject == null) {
             return null;
         }
-        if (attribute instanceof Devices_osConst.DEVICES) {
-            Devices_osConst.DEVICES attributeEnum = (Devices_osConst.DEVICES) attribute;
+        if (attribute instanceof Devices_osConst.METRICS) {
+            Devices_osConst.METRICS attributeEnum = (Devices_osConst.METRICS) attribute;
             switch (attributeEnum) {
-                case ID:
-                    return domainObject.getId();
-                case DEVICE_TYPE:
-                    return domainObject.getDeviceType();
-                case UPDATE_TIME:
-                    return new Integer(domainObject.getUpdateTime());
+                case PROBE_TITLE:
+                    return domainObject.getProbeTitle();
+                case SCALE_TITLE:
+                    return domainObject.getScaleTitle();
+                case LEVEL:
+                    return domainObject.getLevel();
+                case ICON:
+                    return domainObject.getIcon();
+                case TITLE:
+                    return domainObject.getTitle();
+                case MODE:
+                    return domainObject.getMode();
                default:
                    throw new NoSuchAttributeException("Unknown attribute " +
                    attribute + " in role " + getRoleConstant() + ".");
@@ -149,56 +169,35 @@ class DevicesRole extends AbstractOSRole<Device> {
                 " in role " + getRoleConstant() + ".");
     }
 
-    @SuppressWarnings("incomplete-switch")
     public Object getRelation(Object domObj, RoleConstant role) {
-        Device domainObject = (Device) domObj;
+        DeviceMetrics domainObject = (DeviceMetrics) domObj;
         if (domainObject == null) {
             return null;
         }
         if (role instanceof Devices_osConst.OS) {
             Devices_osConst.OS roleEnum = (Devices_osConst.OS) role;
-            switch (roleEnum) {
-                case METRICS:
-                    return domainObject.getMetrics();
-            }
             throw new NoSuchRoleException("No such role: " + roleEnum +
-                    " in class Device");
+                    " in class DeviceMetrics");
         }
 
         throw new IllegalArgumentException("Unknow enum: " + role +
                 " should be of type Devices_osConst.OS");
     }
 
-    @SuppressWarnings("incomplete-switch")
     public void updateRelation(Object domObj, Object relation, RoleConstant role) {
         if (role instanceof Devices_osConst.OS) {
-            Device domainObject = (Device) domObj;
-            Devices_osConst.OS roleEnum = (Devices_osConst.OS) role;
-            switch (roleEnum) {
-                case METRICS:
-                    domainObject.setMetrics((DeviceMetrics) relation);
-                    return;
-            }
             throw new NoSuchRoleException("No such role: " + role +
-                    " in class Device");
+                    " in class DeviceMetrics");
         }
 
         throw new IllegalArgumentException("Unknown enum: " + role +
                 " should be of type Devices_osConst.OS");
     }
 
-    @SuppressWarnings("incomplete-switch")
     public void setRelation(Object domObj, Object relation, RoleConstant role) {
         if (role instanceof Devices_osConst.OS) {
-            Device domainObject = (Device) domObj;
-            Devices_osConst.OS roleEnum = (Devices_osConst.OS) role;
-            switch (roleEnum) {
-                case METRICS:
-                    domainObject.setMetrics((DeviceMetrics) relation);
-                    return;
-            }
             throw new NoSuchRoleException("No such role: " + role +
-                    " in class Device");
+                    " in class DeviceMetrics");
         }
 
         throw new IllegalArgumentException("Unknown enum: " + role +

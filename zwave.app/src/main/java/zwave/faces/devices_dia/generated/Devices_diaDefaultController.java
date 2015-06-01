@@ -10,6 +10,7 @@ import java.util.Map;
 
 import me.zwave.vdev.Device;
 import me.zwave.vdev.DeviceList;
+import me.zwave.vdev.DeviceMetrics;
 
 import no.esito.jvine.action.ActionMethod;
 import no.esito.jvine.controller.JVineController;
@@ -97,6 +98,11 @@ public abstract class Devices_diaDefaultController extends DialogController {
         // The devices node
         parent = getOSRole(Devices_osConst.OS.DEVICE_LIST);
         node = new OSNode<Device>(parent, this, (OSRole<Device>) osRoleMap.get(Devices_osConst.OS.DEVICES));
+        JVineController.getInstance(this).addOSNode(node);
+
+        // The metrics node
+        parent = getOSRole(Devices_osConst.OS.DEVICES);
+        node = new OSNode<DeviceMetrics>(parent, this, (OSRole<DeviceMetrics>) osRoleMap.get(Devices_osConst.OS.METRICS));
         JVineController.getInstance(this).addOSNode(node);
     }
 

@@ -57,6 +57,9 @@ public abstract class Devices_diaDefaultView extends FacesDialogView {
             case DEVICES:
                 setAllDevicesAndRelatedFields(role, instances);
                 break;
+            case METRICS:
+                setMetricsAndRelatedFields(role, instances);
+                break;
             default:
                 break;
         }
@@ -150,6 +153,21 @@ public abstract class Devices_diaDefaultView extends FacesDialogView {
                     setFieldValue(field, role.getValue(firstInstance, field.getAttribute()));
                 }
             }
+            setMetricsAndRelatedFields(role, instances);
+        }
+    }
+
+    private void setMetricsAndRelatedFields(final OSNode<?> role, final Collection<?> instances) {
+        if (role.getRoleConstant() == Devices_osConst.OS.METRICS || role.isAncestorOf(Devices_osConst.OS.METRICS)) {
+            Object firstInstance = instances.isEmpty() ? null : instances.iterator().next();
+            for (DialogObjectConstant field : getRoleFields(Devices_osConst.OS.METRICS)) {
+                if (firstInstance == null) {
+                    setFieldValue(field, null);
+                }
+                else {
+                    setFieldValue(field, role.getValue(firstInstance, field.getAttribute()));
+                }
+            }
         }
     }
 
@@ -197,6 +215,7 @@ public abstract class Devices_diaDefaultView extends FacesDialogView {
         addRoleField(Devices_osConst.OS.DEVICE_LIST, Devices_diaConst.DIALOG.DEVICE_LIST_UPDATE_TIME);
         addRoleField(Devices_osConst.OS.DEVICES, Devices_diaConst.DIALOG.DEVICES_ID);
         addRoleField(Devices_osConst.OS.DEVICES, Devices_diaConst.DIALOG.DEVICES_DEVICE_TYPE);
+        addRoleField(Devices_osConst.OS.METRICS, Devices_diaConst.DIALOG.METRICS_PROBE_TITLE);
         addRoleField(Devices_osConst.OS.DEVICES, Devices_diaConst.DIALOG.DEVICES_UPDATE_TIME);
         addRoleList(Devices_osConst.OS.DEVICES, Devices_diaConst.DIALOG.DEVICES_TABLE, new FacesTableModel<DevicesTableRow>(DevicesTableRow.getColumnDefinitions(), getViewModel()));
         initDevicesTable();
@@ -218,6 +237,9 @@ public abstract class Devices_diaDefaultView extends FacesDialogView {
         }
         if (Comparable.class.isAssignableFrom(Devices_diaConst.DIALOG.DEVICES_DEVICE_TYPE.getAttribute().getAttributeType())) {
             comparators.add(new ListRowComparator<DevicesTableRow>(Devices_diaConst.DIALOG.DEVICES_DEVICE_TYPE, 1, ListRowComparator.Sorting.NO_SORT));
+        }
+        if (Comparable.class.isAssignableFrom(Devices_diaConst.DIALOG.METRICS_PROBE_TITLE.getAttribute().getAttributeType())) {
+            comparators.add(new ListRowComparator<DevicesTableRow>(Devices_diaConst.DIALOG.METRICS_PROBE_TITLE, 3, ListRowComparator.Sorting.NO_SORT));
         }
         if (Comparable.class.isAssignableFrom(Devices_diaConst.DIALOG.DEVICES_UPDATE_TIME.getAttribute().getAttributeType())) {
             comparators.add(new ListRowComparator<DevicesTableRow>(Devices_diaConst.DIALOG.DEVICES_UPDATE_TIME, 2, ListRowComparator.Sorting.NO_SORT));

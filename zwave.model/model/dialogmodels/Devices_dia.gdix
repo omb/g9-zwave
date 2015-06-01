@@ -176,6 +176,23 @@
 				/>
 				<LabelControl
 					TABSequence="False"
+					Title="title"
+					id="G1433147671643"
+					name="MetricsProbeTitleLabel">
+					<Reference name="GeneratedBy" IdRef="G1433147671642"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1433147671636"
+					AttributeName="probeTitle"
+					RoleId="G1433147671635"
+					RoleName="metrics"
+					TABSequence="False"
+					VarFieldType="Text"
+					id="G1433147671642"
+					name="probeTitle"
+				/>
+				<LabelControl
+					TABSequence="False"
 					id="G1432813062519"
 					name="DevicesUpdateTimeLabel">
 					<Reference name="GeneratedBy" IdRef="G1432813062520"/>
@@ -201,6 +218,7 @@
 				<Reference name="SortSequence" IdRef="G1432813062516"/>
 				<Reference name="SortSequence" IdRef="G1432813062518"/>
 				<Reference name="SortSequence" IdRef="G1432813062520"/>
+				<Reference name="SortSequence" IdRef="G1433147671642"/>
 			</TableBlock>
 		</SimpleBlock>
 		<Reference name="TabSequence" IdRef="G1432712289659"/>

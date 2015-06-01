@@ -138,6 +138,24 @@ public abstract class Devices_diaDefaultBean extends FacesDialogBean {
         setField(Devices_diaConst.DIALOG.DEVICES_DEVICE_TYPE, devices_deviceType);
     }
 
+    /**
+     * Get the metrics_probeTitle property.
+     *
+     * @return the metrics_probeTitle property
+     */
+    public String getMetrics_probeTitle() {
+        return (String) getField(Devices_diaConst.DIALOG.METRICS_PROBE_TITLE);
+    }
+
+    /**
+     * Set the metrics_probeTitle property.
+     *
+     * @param metrics_probeTitle the new value for the metrics_probeTitle property
+     */
+    public void setMetrics_probeTitle(String metrics_probeTitle) {
+        setField(Devices_diaConst.DIALOG.METRICS_PROBE_TITLE, metrics_probeTitle);
+    }
+
     private static final NumberConverter devices_updateTime_converter;
     static {
         devices_updateTime_converter = new NumberConverter();

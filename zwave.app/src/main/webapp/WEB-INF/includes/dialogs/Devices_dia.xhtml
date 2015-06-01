@@ -177,6 +177,21 @@
                                   >
                     </h:outputText>
                   </ace:column>
+                  <ace:column style="width:120px;max-width:120px;padding:4px 4px;"
+                              styleClass="gvaDataTableColumn StandardNoFrame_header StandardShadowIn_column"
+                              sortBy="#{devices.metrics_probeTitle}"
+                              sortPriority="#{devices_dia.sortPriority['Devices_dia_metrics_probeTitle']}"
+                              sortAscending="#{devices_dia.sortAscending['Devices_dia_metrics_probeTitle']}"
+                              rendered="${devices_dia.shown['Devices_dia_metrics_probeTitle']}" >
+                    <f:facet name="header">
+                      <h:commandLink value="#{devices_dia.msg('dialog.Devices_dia.metrics.probeTitle.column_title')}" style="text-decoration: none; cursor: default;" />
+                    </f:facet>
+                    <h:outputText id="Devices_dia_metrics_probeTitle_column" value="#{devices.metrics_probeTitle}"
+                                  styleClass="StandardShadowIn_font gvaAlignLeft ${devices_dia.shown['Devices_dia_metrics_probeTitle'] ? '' : 'gvaHidden'}"
+                                  style="white-space:nowrap;"
+                                  >
+                    </h:outputText>
+                  </ace:column>
                   <ace:column style="width:95px;max-width:95px;padding:4px 4px;"
                               styleClass="gvaDataTableColumn StandardNoFrame_header StandardShadowIn_column"
                               sortBy="#{devices.devices_updateTime}"

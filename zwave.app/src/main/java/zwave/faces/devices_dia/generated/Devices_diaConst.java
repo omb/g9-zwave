@@ -150,6 +150,10 @@ public interface Devices_diaConst {
         DEVICES_DEVICE_TYPE_LABEL("DevicesDeviceTypeLabel", "Devices_dia_devicesDeviceTypeLabel", DialogObjectType.Label, null, null, DEVICES_TABLE, "DEVICES_DEVICE_TYPE_LABEL", "dialog.Devices_dia.DevicesDeviceTypeLabel.title", 0),
         /** The devices.deviceType enum */
         DEVICES_DEVICE_TYPE("devices.deviceType", "Devices_dia_devices_deviceType", DialogObjectType.TextField, null, Devices_osConst.DEVICES.DEVICE_TYPE, DEVICES_TABLE, "DEVICES_DEVICE_TYPE_LABEL", "dialog.Devices_dia.devices.deviceType.title", 0),
+        /** The MetricsProbeTitleLabel enum */
+        METRICS_PROBE_TITLE_LABEL("MetricsProbeTitleLabel", "Devices_dia_metricsProbeTitleLabel", DialogObjectType.Label, null, null, DEVICES_TABLE, "METRICS_PROBE_TITLE_LABEL", "dialog.Devices_dia.MetricsProbeTitleLabel.title", 0),
+        /** The metrics.probeTitle enum */
+        METRICS_PROBE_TITLE("metrics.probeTitle", "Devices_dia_metrics_probeTitle", DialogObjectType.TextField, null, Devices_osConst.METRICS.PROBE_TITLE, DEVICES_TABLE, "METRICS_PROBE_TITLE_LABEL", "dialog.Devices_dia.metrics.probeTitle.title", 0),
         /** The DevicesUpdateTimeLabel enum */
         DEVICES_UPDATE_TIME_LABEL("DevicesUpdateTimeLabel", "Devices_dia_devicesUpdateTimeLabel", DialogObjectType.Label, null, null, DEVICES_TABLE, "DEVICES_UPDATE_TIME_LABEL", "dialog.Devices_dia.DevicesUpdateTimeLabel.title", 0),
         /** The devices.updateTime enum */

@@ -29,6 +29,7 @@ public class DevicesTableRow extends ListRow {
         Collection<DialogObjectConstant> tmp = new HashSet<DialogObjectConstant>();
         tmp.add(Devices_diaConst.DIALOG.DEVICES_ID);
         tmp.add(Devices_diaConst.DIALOG.DEVICES_DEVICE_TYPE);
+        tmp.add(Devices_diaConst.DIALOG.METRICS_PROBE_TITLE);
         tmp.add(Devices_diaConst.DIALOG.DEVICES_UPDATE_TIME);
         fields = Collections.unmodifiableCollection(tmp);
     }
@@ -99,6 +100,24 @@ public class DevicesTableRow extends ListRow {
      */
     public void setDevices_deviceType(String devices_deviceType) {
         setValue(Devices_diaConst.DIALOG.DEVICES_DEVICE_TYPE, devices_deviceType);
+    }
+
+    /**
+     * Get the value for the metrics_probeTitle property.
+     *
+     * @return the value for the metrics_probeTitle property.
+     */
+    public String getMetrics_probeTitle() {
+        return (String) getValue(Devices_diaConst.DIALOG.METRICS_PROBE_TITLE);
+    }
+
+    /**
+     * Set the value for the metrics_probeTitle property.
+     *
+     * @param metrics_probeTitle the new value for the metrics_probeTitle property.
+     */
+    public void setMetrics_probeTitle(String metrics_probeTitle) {
+        setValue(Devices_diaConst.DIALOG.METRICS_PROBE_TITLE, metrics_probeTitle);
     }
 
     /**
