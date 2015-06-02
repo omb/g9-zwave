@@ -125,87 +125,24 @@
 				/>
 				<LabelControl
 					TABSequence="False"
-					id="G1432712289683"
-					name="DeviceUpdateTimeLabel">
-					<Reference name="GeneratedBy" IdRef="G1432712289684"/>
+					id="G1432712289693"
+					name="MetricsTitleLabel">
+					<Reference name="GeneratedBy" IdRef="G1432712289694"/>
 				</LabelControl>
 				<VarField
-					AttributeID="G1432712289626"
-					AttributeName="updateTime"
+					AttributeID="G1432712289633"
+					AttributeName="title"
 					Editable="False"
 					FrameCode="Inherit"
-					HorizontalFlexibility="Stretched"
-					RoleId="G1432712289623"
-					RoleName="Device"
-					StyleRefId="G41b5b14c029619"
-					StyleRefName="BlackOnLightGreyNoFrame"
-					TABSequence="True"
-					VarFieldType="Text"
-					id="G1432712289684"
-					name="updateTime"
-				/>
-				<LabelControl
-					TABSequence="False"
-					id="G1432712289685"
-					name="MetricsProbeTitleLabel">
-					<Reference name="GeneratedBy" IdRef="G1432712289686"/>
-				</LabelControl>
-				<VarField
-					AttributeID="G1432712289629"
-					AttributeName="probeTitle"
-					Editable="False"
-					FrameCode="Inherit"
-					HorizontalFlexibility="Stretched"
+					NumberOfCharacters="30"
 					RoleId="G1432712289628"
 					RoleName="metrics"
 					StyleRefId="G41b5b14c029619"
 					StyleRefName="BlackOnLightGreyNoFrame"
 					TABSequence="True"
 					VarFieldType="Text"
-					id="G1432712289686"
-					name="probeTitle"
-				/>
-				<LabelControl
-					TABSequence="False"
-					id="G1432712289687"
-					name="MetricsScaleTitleLabel">
-					<Reference name="GeneratedBy" IdRef="G1432712289688"/>
-				</LabelControl>
-				<VarField
-					AttributeID="G1432712289630"
-					AttributeName="scaleTitle"
-					Editable="False"
-					FrameCode="Inherit"
-					HorizontalFlexibility="Stretched"
-					RoleId="G1432712289628"
-					RoleName="metrics"
-					StyleRefId="G41b5b14c029619"
-					StyleRefName="BlackOnLightGreyNoFrame"
-					TABSequence="True"
-					VarFieldType="Text"
-					id="G1432712289688"
-					name="scaleTitle"
-				/>
-				<LabelControl
-					TABSequence="False"
-					id="G1432712289689"
-					name="MetricsLevelLabel">
-					<Reference name="GeneratedBy" IdRef="G1432712289690"/>
-				</LabelControl>
-				<VarField
-					AttributeID="G1432712289631"
-					AttributeName="level"
-					Editable="False"
-					FrameCode="Inherit"
-					HorizontalFlexibility="Stretched"
-					RoleId="G1432712289628"
-					RoleName="metrics"
-					StyleRefId="G41b5b14c029619"
-					StyleRefName="BlackOnLightGreyNoFrame"
-					TABSequence="True"
-					VarFieldType="Text"
-					id="G1432712289690"
-					name="level"
+					id="G1432712289694"
+					name="title"
 				/>
 				<LabelControl
 					TABSequence="False"
@@ -230,24 +167,66 @@
 				/>
 				<LabelControl
 					TABSequence="False"
-					id="G1432712289693"
-					name="MetricsTitleLabel">
-					<Reference name="GeneratedBy" IdRef="G1432712289694"/>
+					id="G1432712289689"
+					name="MetricsLevelLabel">
+					<Reference name="GeneratedBy" IdRef="G1432712289690"/>
 				</LabelControl>
 				<VarField
-					AttributeID="G1432712289633"
-					AttributeName="title"
+					AttributeID="G1432712289631"
+					AttributeName="level"
 					Editable="False"
 					FrameCode="Inherit"
-					NumberOfCharacters="30"
+					HorizontalFlexibility="Stretched"
 					RoleId="G1432712289628"
 					RoleName="metrics"
 					StyleRefId="G41b5b14c029619"
 					StyleRefName="BlackOnLightGreyNoFrame"
 					TABSequence="True"
 					VarFieldType="Text"
-					id="G1432712289694"
-					name="title"
+					id="G1432712289690"
+					name="level"
+				/>
+				<LabelControl
+					TABSequence="False"
+					id="G1432712289687"
+					name="MetricsScaleTitleLabel">
+					<Reference name="GeneratedBy" IdRef="G1432712289688"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1432712289630"
+					AttributeName="scaleTitle"
+					Editable="False"
+					FrameCode="Inherit"
+					HorizontalFlexibility="Stretched"
+					RoleId="G1432712289628"
+					RoleName="metrics"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
+					TABSequence="True"
+					VarFieldType="Text"
+					id="G1432712289688"
+					name="scaleTitle"
+				/>
+				<LabelControl
+					TABSequence="False"
+					id="G1432712289685"
+					name="MetricsProbeTitleLabel">
+					<Reference name="GeneratedBy" IdRef="G1432712289686"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1432712289629"
+					AttributeName="probeTitle"
+					Editable="False"
+					FrameCode="Inherit"
+					HorizontalFlexibility="Stretched"
+					RoleId="G1432712289628"
+					RoleName="metrics"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
+					TABSequence="True"
+					VarFieldType="Text"
+					id="G1432712289686"
+					name="probeTitle"
 				/>
 				<LabelControl
 					TABSequence="False"
@@ -269,6 +248,27 @@
 					VarFieldType="Text"
 					id="G1432712289696"
 					name="mode"
+				/>
+				<LabelControl
+					TABSequence="False"
+					id="G1432712289683"
+					name="DeviceUpdateTimeLabel">
+					<Reference name="GeneratedBy" IdRef="G1432712289684"/>
+				</LabelControl>
+				<VarField
+					AttributeID="G1432712289626"
+					AttributeName="updateTime"
+					Editable="False"
+					FrameCode="Inherit"
+					HorizontalFlexibility="Stretched"
+					RoleId="G1432712289623"
+					RoleName="Device"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
+					TABSequence="True"
+					VarFieldType="Text"
+					id="G1432712289684"
+					name="updateTime"
 				/>
 			</SimpleBlock>
 		</SimpleBlock>

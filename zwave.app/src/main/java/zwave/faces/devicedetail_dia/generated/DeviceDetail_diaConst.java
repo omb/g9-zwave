@@ -140,34 +140,34 @@ public interface DeviceDetail_diaConst {
         DEVICE_DEVICE_TYPE_LABEL("DeviceDeviceTypeLabel", "DeviceDetail_dia_deviceDeviceTypeLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "DEVICE_DEVICE_TYPE_LABEL", "dialog.DeviceDetail_dia.DeviceDeviceTypeLabel.title", 0),
         /** The Device.deviceType enum */
         DEVICE_DEVICE_TYPE("Device.deviceType", "DeviceDetail_dia_device_deviceType", DialogObjectType.TextField, null, DeviceDetail_osConst.DEVICE.DEVICE_TYPE, DEVICE_DATA, "DEVICE_DEVICE_TYPE_LABEL", "dialog.DeviceDetail_dia.Device.deviceType.title", 2),
-        /** The DeviceUpdateTimeLabel enum */
-        DEVICE_UPDATE_TIME_LABEL("DeviceUpdateTimeLabel", "DeviceDetail_dia_deviceUpdateTimeLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "DEVICE_UPDATE_TIME_LABEL", "dialog.DeviceDetail_dia.DeviceUpdateTimeLabel.title", 0),
-        /** The Device.updateTime enum */
-        DEVICE_UPDATE_TIME("Device.updateTime", "DeviceDetail_dia_device_updateTime", DialogObjectType.TextField, null, DeviceDetail_osConst.DEVICE.UPDATE_TIME, DEVICE_DATA, "DEVICE_UPDATE_TIME_LABEL", "dialog.DeviceDetail_dia.Device.updateTime.title", 3),
-        /** The MetricsProbeTitleLabel enum */
-        METRICS_PROBE_TITLE_LABEL("MetricsProbeTitleLabel", "DeviceDetail_dia_metricsProbeTitleLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "METRICS_PROBE_TITLE_LABEL", "dialog.DeviceDetail_dia.MetricsProbeTitleLabel.title", 0),
-        /** The metrics.probeTitle enum */
-        METRICS_PROBE_TITLE("metrics.probeTitle", "DeviceDetail_dia_metrics_probeTitle", DialogObjectType.TextField, null, DeviceDetail_osConst.METRICS.PROBE_TITLE, DEVICE_DATA, "METRICS_PROBE_TITLE_LABEL", "dialog.DeviceDetail_dia.metrics.probeTitle.title", 4),
-        /** The MetricsScaleTitleLabel enum */
-        METRICS_SCALE_TITLE_LABEL("MetricsScaleTitleLabel", "DeviceDetail_dia_metricsScaleTitleLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "METRICS_SCALE_TITLE_LABEL", "dialog.DeviceDetail_dia.MetricsScaleTitleLabel.title", 0),
-        /** The metrics.scaleTitle enum */
-        METRICS_SCALE_TITLE("metrics.scaleTitle", "DeviceDetail_dia_metrics_scaleTitle", DialogObjectType.TextField, null, DeviceDetail_osConst.METRICS.SCALE_TITLE, DEVICE_DATA, "METRICS_SCALE_TITLE_LABEL", "dialog.DeviceDetail_dia.metrics.scaleTitle.title", 5),
-        /** The MetricsLevelLabel enum */
-        METRICS_LEVEL_LABEL("MetricsLevelLabel", "DeviceDetail_dia_metricsLevelLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "METRICS_LEVEL_LABEL", "dialog.DeviceDetail_dia.MetricsLevelLabel.title", 0),
-        /** The metrics.level enum */
-        METRICS_LEVEL("metrics.level", "DeviceDetail_dia_metrics_level", DialogObjectType.TextField, null, DeviceDetail_osConst.METRICS.LEVEL, DEVICE_DATA, "METRICS_LEVEL_LABEL", "dialog.DeviceDetail_dia.metrics.level.title", 6),
-        /** The MetricsIconLabel enum */
-        METRICS_ICON_LABEL("MetricsIconLabel", "DeviceDetail_dia_metricsIconLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "METRICS_ICON_LABEL", "dialog.DeviceDetail_dia.MetricsIconLabel.title", 0),
-        /** The metrics.icon enum */
-        METRICS_ICON("metrics.icon", "DeviceDetail_dia_metrics_icon", DialogObjectType.TextField, null, DeviceDetail_osConst.METRICS.ICON, DEVICE_DATA, "METRICS_ICON_LABEL", "dialog.DeviceDetail_dia.metrics.icon.title", 7),
         /** The MetricsTitleLabel enum */
         METRICS_TITLE_LABEL("MetricsTitleLabel", "DeviceDetail_dia_metricsTitleLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "METRICS_TITLE_LABEL", "dialog.DeviceDetail_dia.MetricsTitleLabel.title", 0),
         /** The metrics.title enum */
         METRICS_TITLE("metrics.title", "DeviceDetail_dia_metrics_title", DialogObjectType.TextField, null, DeviceDetail_osConst.METRICS.TITLE, DEVICE_DATA, "METRICS_TITLE_LABEL", "dialog.DeviceDetail_dia.metrics.title.title", 8),
+        /** The MetricsIconLabel enum */
+        METRICS_ICON_LABEL("MetricsIconLabel", "DeviceDetail_dia_metricsIconLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "METRICS_ICON_LABEL", "dialog.DeviceDetail_dia.MetricsIconLabel.title", 0),
+        /** The metrics.icon enum */
+        METRICS_ICON("metrics.icon", "DeviceDetail_dia_metrics_icon", DialogObjectType.TextField, null, DeviceDetail_osConst.METRICS.ICON, DEVICE_DATA, "METRICS_ICON_LABEL", "dialog.DeviceDetail_dia.metrics.icon.title", 7),
+        /** The MetricsLevelLabel enum */
+        METRICS_LEVEL_LABEL("MetricsLevelLabel", "DeviceDetail_dia_metricsLevelLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "METRICS_LEVEL_LABEL", "dialog.DeviceDetail_dia.MetricsLevelLabel.title", 0),
+        /** The metrics.level enum */
+        METRICS_LEVEL("metrics.level", "DeviceDetail_dia_metrics_level", DialogObjectType.TextField, null, DeviceDetail_osConst.METRICS.LEVEL, DEVICE_DATA, "METRICS_LEVEL_LABEL", "dialog.DeviceDetail_dia.metrics.level.title", 6),
+        /** The MetricsScaleTitleLabel enum */
+        METRICS_SCALE_TITLE_LABEL("MetricsScaleTitleLabel", "DeviceDetail_dia_metricsScaleTitleLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "METRICS_SCALE_TITLE_LABEL", "dialog.DeviceDetail_dia.MetricsScaleTitleLabel.title", 0),
+        /** The metrics.scaleTitle enum */
+        METRICS_SCALE_TITLE("metrics.scaleTitle", "DeviceDetail_dia_metrics_scaleTitle", DialogObjectType.TextField, null, DeviceDetail_osConst.METRICS.SCALE_TITLE, DEVICE_DATA, "METRICS_SCALE_TITLE_LABEL", "dialog.DeviceDetail_dia.metrics.scaleTitle.title", 5),
+        /** The MetricsProbeTitleLabel enum */
+        METRICS_PROBE_TITLE_LABEL("MetricsProbeTitleLabel", "DeviceDetail_dia_metricsProbeTitleLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "METRICS_PROBE_TITLE_LABEL", "dialog.DeviceDetail_dia.MetricsProbeTitleLabel.title", 0),
+        /** The metrics.probeTitle enum */
+        METRICS_PROBE_TITLE("metrics.probeTitle", "DeviceDetail_dia_metrics_probeTitle", DialogObjectType.TextField, null, DeviceDetail_osConst.METRICS.PROBE_TITLE, DEVICE_DATA, "METRICS_PROBE_TITLE_LABEL", "dialog.DeviceDetail_dia.metrics.probeTitle.title", 4),
         /** The MetricsModeLabel enum */
         METRICS_MODE_LABEL("MetricsModeLabel", "DeviceDetail_dia_metricsModeLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "METRICS_MODE_LABEL", "dialog.DeviceDetail_dia.MetricsModeLabel.title", 0),
         /** The metrics.mode enum */
         METRICS_MODE("metrics.mode", "DeviceDetail_dia_metrics_mode", DialogObjectType.TextField, null, DeviceDetail_osConst.METRICS.MODE, DEVICE_DATA, "METRICS_MODE_LABEL", "dialog.DeviceDetail_dia.metrics.mode.title", 9),
+        /** The DeviceUpdateTimeLabel enum */
+        DEVICE_UPDATE_TIME_LABEL("DeviceUpdateTimeLabel", "DeviceDetail_dia_deviceUpdateTimeLabel", DialogObjectType.Label, null, null, DEVICE_DATA, "DEVICE_UPDATE_TIME_LABEL", "dialog.DeviceDetail_dia.DeviceUpdateTimeLabel.title", 0),
+        /** The Device.updateTime enum */
+        DEVICE_UPDATE_TIME("Device.updateTime", "DeviceDetail_dia_device_updateTime", DialogObjectType.TextField, null, DeviceDetail_osConst.DEVICE.UPDATE_TIME, DEVICE_DATA, "DEVICE_UPDATE_TIME_LABEL", "dialog.DeviceDetail_dia.Device.updateTime.title", 3),
         /** The CommandCommandLabel enum */
         COMMAND_COMMAND_LABEL("CommandCommandLabel", "DeviceDetail_dia_commandCommandLabel", DialogObjectType.Label, null, null, COMMANDS, "COMMAND_COMMAND_LABEL", "dialog.DeviceDetail_dia.CommandCommandLabel.title", 0),
         /** The Command.command enum */

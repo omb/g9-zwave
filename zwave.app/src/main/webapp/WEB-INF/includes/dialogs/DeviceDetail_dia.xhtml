@@ -91,11 +91,173 @@
                       <td style="padding-left: 6px;">
                         <h:inputText size="20"
                                      id="DeviceDetail_dia_device_deviceType"
-                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_device_deviceType'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_device_deviceType'] ? 'gvaMandatory' : ''}"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_device_deviceType'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_device_deviceType'] ? 'gvaMandatory' : ''}"
                                      disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_device_deviceType']}"
                                      tabindex="2"
                                      readonly="${!devicedetail_dia.editable['DeviceDetail_dia_device_deviceType']}"
                                      value="#{devicedetail_dia.device_deviceType}"
+                                      >
+                        </h:inputText>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr align="left" valign="top" style="height:100%;">
+                      <td style="height:6px;min-height:6px;" />
+                      <td style="height:6px;min-height:6px;" />
+                      <td style="width:11px;min-width:11px;height:6px;min-height:6px;" />
+                      <td style="height:6px;min-height:6px;" />
+                      <td style="height:6px;min-height:6px;" />
+                      <td/>
+                    </tr>
+                    <tr align="left" valign="top" style="height:100%;">
+                      <td style="width: 1px;" class="gvaLabelCellTop">
+                        <label for="iceform:DeviceDetail_dia_metrics_title">
+                          <h:outputText
+                                        id="DeviceDetail_dia_metricsTitleLabel"
+                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsTitleLabel'] ? '' : 'gvaHidden'}"
+                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsTitleLabel']}"
+                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsTitleLabel.title')}"
+                                         />
+                        </label>
+                      </td>
+                      <td style="padding-left: 6px;">
+                        <h:inputText size="30"
+                                     id="DeviceDetail_dia_metrics_title"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_title'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_title'] ? 'gvaMandatory' : ''}"
+                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_title']}"
+                                     tabindex="8"
+                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_title']}"
+                                     value="#{devicedetail_dia.metrics_title}"
+                                      >
+                        </h:inputText>
+                      </td>
+                      <td style="width:11px;min-width:11px;" />
+                      <td style="width: 1px;" class="gvaLabelCellTop">
+                        <label for="iceform:DeviceDetail_dia_metrics_icon">
+                          <h:outputText
+                                        id="DeviceDetail_dia_metricsIconLabel"
+                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsIconLabel'] ? '' : 'gvaHidden'}"
+                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsIconLabel']}"
+                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsIconLabel.title')}"
+                                         />
+                        </label>
+                      </td>
+                      <td style="padding-left: 6px;">
+                        <h:inputText size="20"
+                                     id="DeviceDetail_dia_metrics_icon"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_icon'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_icon'] ? 'gvaMandatory' : ''}"
+                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_icon']}"
+                                     tabindex="7"
+                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_icon']}"
+                                     value="#{devicedetail_dia.metrics_icon}"
+                                      >
+                        </h:inputText>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr align="left" valign="top" style="height:100%;">
+                      <td style="height:6px;min-height:6px;" />
+                      <td style="height:6px;min-height:6px;" />
+                      <td style="width:11px;min-width:11px;height:6px;min-height:6px;" />
+                      <td style="height:6px;min-height:6px;" />
+                      <td style="height:6px;min-height:6px;" />
+                      <td/>
+                    </tr>
+                    <tr align="left" valign="top" style="height:100%;">
+                      <td style="width: 1px;" class="gvaLabelCellTop">
+                        <label for="iceform:DeviceDetail_dia_metrics_level">
+                          <h:outputText
+                                        id="DeviceDetail_dia_metricsLevelLabel"
+                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsLevelLabel'] ? '' : 'gvaHidden'}"
+                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsLevelLabel']}"
+                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsLevelLabel.title')}"
+                                         />
+                        </label>
+                      </td>
+                      <td style="padding-left: 6px;">
+                        <h:inputText size="20"
+                                     id="DeviceDetail_dia_metrics_level"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_level'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_level'] ? 'gvaMandatory' : ''}"
+                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_level']}"
+                                     tabindex="6"
+                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_level']}"
+                                     value="#{devicedetail_dia.metrics_level}"
+                                      >
+                        </h:inputText>
+                      </td>
+                      <td style="width:11px;min-width:11px;" />
+                      <td style="width: 1px;" class="gvaLabelCellTop">
+                        <label for="iceform:DeviceDetail_dia_metrics_scaleTitle">
+                          <h:outputText
+                                        id="DeviceDetail_dia_metricsScaleTitleLabel"
+                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsScaleTitleLabel'] ? '' : 'gvaHidden'}"
+                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsScaleTitleLabel']}"
+                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsScaleTitleLabel.title')}"
+                                         />
+                        </label>
+                      </td>
+                      <td style="padding-left: 6px;">
+                        <h:inputText size="20"
+                                     id="DeviceDetail_dia_metrics_scaleTitle"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_scaleTitle'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_scaleTitle'] ? 'gvaMandatory' : ''}"
+                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_scaleTitle']}"
+                                     tabindex="5"
+                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_scaleTitle']}"
+                                     value="#{devicedetail_dia.metrics_scaleTitle}"
+                                      >
+                        </h:inputText>
+                      </td>
+                      <td/>
+                    </tr>
+                    <tr align="left" valign="top" style="height:100%;">
+                      <td style="height:6px;min-height:6px;" />
+                      <td style="height:6px;min-height:6px;" />
+                      <td style="width:11px;min-width:11px;height:6px;min-height:6px;" />
+                      <td style="height:6px;min-height:6px;" />
+                      <td style="height:6px;min-height:6px;" />
+                      <td/>
+                    </tr>
+                    <tr align="left" valign="top" style="height:100%;">
+                      <td style="width: 1px;" class="gvaLabelCellTop">
+                        <label for="iceform:DeviceDetail_dia_metrics_probeTitle">
+                          <h:outputText
+                                        id="DeviceDetail_dia_metricsProbeTitleLabel"
+                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsProbeTitleLabel'] ? '' : 'gvaHidden'}"
+                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsProbeTitleLabel']}"
+                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsProbeTitleLabel.title')}"
+                                         />
+                        </label>
+                      </td>
+                      <td style="padding-left: 6px;">
+                        <h:inputText size="20"
+                                     id="DeviceDetail_dia_metrics_probeTitle"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_probeTitle'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_probeTitle'] ? 'gvaMandatory' : ''}"
+                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_probeTitle']}"
+                                     tabindex="4"
+                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_probeTitle']}"
+                                     value="#{devicedetail_dia.metrics_probeTitle}"
+                                      >
+                        </h:inputText>
+                      </td>
+                      <td style="width:11px;min-width:11px;" />
+                      <td style="width: 1px;" class="gvaLabelCellTop">
+                        <label for="iceform:DeviceDetail_dia_metrics_mode">
+                          <h:outputText
+                                        id="DeviceDetail_dia_metricsModeLabel"
+                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsModeLabel'] ? '' : 'gvaHidden'}"
+                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsModeLabel']}"
+                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsModeLabel.title')}"
+                                         />
+                        </label>
+                      </td>
+                      <td style="padding-left: 6px;">
+                        <h:inputText size="20"
+                                     id="DeviceDetail_dia_metrics_mode"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_mode'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_mode'] ? 'gvaMandatory' : ''}"
+                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_mode']}"
+                                     tabindex="9"
+                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_mode']}"
+                                     value="#{devicedetail_dia.metrics_mode}"
                                       >
                         </h:inputText>
                       </td>
@@ -130,168 +292,6 @@
                                      value="#{devicedetail_dia.device_updateTime}"
                                       >
                           <gva:numberConverter dataType="longint" displayRule="" inputLength="11" storedLength="0" scale="0" blankWhenZero="False" title="${devicedetail_dia.title['DeviceDetail_dia_device_updateTime']}"/>
-                        </h:inputText>
-                      </td>
-                      <td style="width:11px;min-width:11px;" />
-                      <td style="width: 1px;" class="gvaLabelCellTop">
-                        <label for="iceform:DeviceDetail_dia_metrics_probeTitle">
-                          <h:outputText
-                                        id="DeviceDetail_dia_metricsProbeTitleLabel"
-                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsProbeTitleLabel'] ? '' : 'gvaHidden'}"
-                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsProbeTitleLabel']}"
-                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsProbeTitleLabel.title')}"
-                                         />
-                        </label>
-                      </td>
-                      <td style="padding-left: 6px;">
-                        <h:inputText size="20"
-                                     id="DeviceDetail_dia_metrics_probeTitle"
-                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_probeTitle'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_probeTitle'] ? 'gvaMandatory' : ''}"
-                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_probeTitle']}"
-                                     tabindex="4"
-                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_probeTitle']}"
-                                     value="#{devicedetail_dia.metrics_probeTitle}"
-                                      >
-                        </h:inputText>
-                      </td>
-                      <td/>
-                    </tr>
-                    <tr align="left" valign="top" style="height:100%;">
-                      <td style="height:6px;min-height:6px;" />
-                      <td style="height:6px;min-height:6px;" />
-                      <td style="width:11px;min-width:11px;height:6px;min-height:6px;" />
-                      <td style="height:6px;min-height:6px;" />
-                      <td style="height:6px;min-height:6px;" />
-                      <td/>
-                    </tr>
-                    <tr align="left" valign="top" style="height:100%;">
-                      <td style="width: 1px;" class="gvaLabelCellTop">
-                        <label for="iceform:DeviceDetail_dia_metrics_scaleTitle">
-                          <h:outputText
-                                        id="DeviceDetail_dia_metricsScaleTitleLabel"
-                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsScaleTitleLabel'] ? '' : 'gvaHidden'}"
-                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsScaleTitleLabel']}"
-                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsScaleTitleLabel.title')}"
-                                         />
-                        </label>
-                      </td>
-                      <td style="padding-left: 6px;">
-                        <h:inputText size="20"
-                                     id="DeviceDetail_dia_metrics_scaleTitle"
-                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_scaleTitle'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_scaleTitle'] ? 'gvaMandatory' : ''}"
-                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_scaleTitle']}"
-                                     tabindex="5"
-                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_scaleTitle']}"
-                                     value="#{devicedetail_dia.metrics_scaleTitle}"
-                                      >
-                        </h:inputText>
-                      </td>
-                      <td style="width:11px;min-width:11px;" />
-                      <td style="width: 1px;" class="gvaLabelCellTop">
-                        <label for="iceform:DeviceDetail_dia_metrics_level">
-                          <h:outputText
-                                        id="DeviceDetail_dia_metricsLevelLabel"
-                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsLevelLabel'] ? '' : 'gvaHidden'}"
-                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsLevelLabel']}"
-                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsLevelLabel.title')}"
-                                         />
-                        </label>
-                      </td>
-                      <td style="padding-left: 6px;">
-                        <h:inputText size="20"
-                                     id="DeviceDetail_dia_metrics_level"
-                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_level'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_level'] ? 'gvaMandatory' : ''}"
-                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_level']}"
-                                     tabindex="6"
-                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_level']}"
-                                     value="#{devicedetail_dia.metrics_level}"
-                                      >
-                        </h:inputText>
-                      </td>
-                      <td/>
-                    </tr>
-                    <tr align="left" valign="top" style="height:100%;">
-                      <td style="height:6px;min-height:6px;" />
-                      <td style="height:6px;min-height:6px;" />
-                      <td style="width:11px;min-width:11px;height:6px;min-height:6px;" />
-                      <td style="height:6px;min-height:6px;" />
-                      <td style="height:6px;min-height:6px;" />
-                      <td/>
-                    </tr>
-                    <tr align="left" valign="top" style="height:100%;">
-                      <td style="width: 1px;" class="gvaLabelCellTop">
-                        <label for="iceform:DeviceDetail_dia_metrics_icon">
-                          <h:outputText
-                                        id="DeviceDetail_dia_metricsIconLabel"
-                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsIconLabel'] ? '' : 'gvaHidden'}"
-                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsIconLabel']}"
-                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsIconLabel.title')}"
-                                         />
-                        </label>
-                      </td>
-                      <td style="padding-left: 6px;">
-                        <h:inputText size="20"
-                                     id="DeviceDetail_dia_metrics_icon"
-                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_icon'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_icon'] ? 'gvaMandatory' : ''}"
-                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_icon']}"
-                                     tabindex="7"
-                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_icon']}"
-                                     value="#{devicedetail_dia.metrics_icon}"
-                                      >
-                        </h:inputText>
-                      </td>
-                      <td style="width:11px;min-width:11px;" />
-                      <td style="width: 1px;" class="gvaLabelCellTop">
-                        <label for="iceform:DeviceDetail_dia_metrics_title">
-                          <h:outputText
-                                        id="DeviceDetail_dia_metricsTitleLabel"
-                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsTitleLabel'] ? '' : 'gvaHidden'}"
-                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsTitleLabel']}"
-                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsTitleLabel.title')}"
-                                         />
-                        </label>
-                      </td>
-                      <td style="padding-left: 6px;">
-                        <h:inputText size="30"
-                                     id="DeviceDetail_dia_metrics_title"
-                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_title'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_title'] ? 'gvaMandatory' : ''}"
-                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_title']}"
-                                     tabindex="8"
-                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_title']}"
-                                     value="#{devicedetail_dia.metrics_title}"
-                                      >
-                        </h:inputText>
-                      </td>
-                      <td/>
-                    </tr>
-                    <tr align="left" valign="top" style="height:100%;">
-                      <td style="height:6px;min-height:6px;" />
-                      <td style="height:6px;min-height:6px;" />
-                      <td style="width:11px;min-width:11px;height:6px;min-height:6px;" />
-                      <td style="height:6px;min-height:6px;" />
-                      <td style="height:6px;min-height:6px;" />
-                      <td/>
-                    </tr>
-                    <tr align="left" valign="top" style="height:100%;">
-                      <td style="width: 1px;" class="gvaLabelCellTop">
-                        <label for="iceform:DeviceDetail_dia_metrics_mode">
-                          <h:outputText
-                                        id="DeviceDetail_dia_metricsModeLabel"
-                                        styleClass="StandardNoFrame gvaNoWrap ${devicedetail_dia.shown['DeviceDetail_dia_metricsModeLabel'] ? '' : 'gvaHidden'}"
-                                        disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metricsModeLabel']}"
-                                        value="#{devicedetail_dia.msg('dialog.DeviceDetail_dia.MetricsModeLabel.title')}"
-                                         />
-                        </label>
-                      </td>
-                      <td style="padding-left: 6px;">
-                        <h:inputText size="20"
-                                     id="DeviceDetail_dia_metrics_mode"
-                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaStretched gvaAlignLeft ${devicedetail_dia.shown['DeviceDetail_dia_metrics_mode'] ? '' : 'gvaHidden'} ${devicedetail_dia.mandatory['DeviceDetail_dia_metrics_mode'] ? 'gvaMandatory' : ''}"
-                                     disabled="${!devicedetail_dia.enabled['DeviceDetail_dia_metrics_mode']}"
-                                     tabindex="9"
-                                     readonly="${!devicedetail_dia.editable['DeviceDetail_dia_metrics_mode']}"
-                                     value="#{devicedetail_dia.metrics_mode}"
-                                      >
                         </h:inputText>
                       </td>
                       <td style="width:11px;min-width:11px;" />

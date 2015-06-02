@@ -65,6 +65,114 @@ public abstract class DeviceDetail_diaDefaultBean extends FacesDialogBean {
         setField(DeviceDetail_diaConst.DIALOG.DEVICE_DEVICE_TYPE, device_deviceType);
     }
 
+    /**
+     * Get the metrics_title property.
+     *
+     * @return the metrics_title property
+     */
+    public String getMetrics_title() {
+        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_TITLE);
+    }
+
+    /**
+     * Set the metrics_title property.
+     *
+     * @param metrics_title the new value for the metrics_title property
+     */
+    public void setMetrics_title(String metrics_title) {
+        setField(DeviceDetail_diaConst.DIALOG.METRICS_TITLE, metrics_title);
+    }
+
+    /**
+     * Get the metrics_icon property.
+     *
+     * @return the metrics_icon property
+     */
+    public String getMetrics_icon() {
+        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_ICON);
+    }
+
+    /**
+     * Set the metrics_icon property.
+     *
+     * @param metrics_icon the new value for the metrics_icon property
+     */
+    public void setMetrics_icon(String metrics_icon) {
+        setField(DeviceDetail_diaConst.DIALOG.METRICS_ICON, metrics_icon);
+    }
+
+    /**
+     * Get the metrics_level property.
+     *
+     * @return the metrics_level property
+     */
+    public String getMetrics_level() {
+        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_LEVEL);
+    }
+
+    /**
+     * Set the metrics_level property.
+     *
+     * @param metrics_level the new value for the metrics_level property
+     */
+    public void setMetrics_level(String metrics_level) {
+        setField(DeviceDetail_diaConst.DIALOG.METRICS_LEVEL, metrics_level);
+    }
+
+    /**
+     * Get the metrics_scaleTitle property.
+     *
+     * @return the metrics_scaleTitle property
+     */
+    public String getMetrics_scaleTitle() {
+        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_SCALE_TITLE);
+    }
+
+    /**
+     * Set the metrics_scaleTitle property.
+     *
+     * @param metrics_scaleTitle the new value for the metrics_scaleTitle property
+     */
+    public void setMetrics_scaleTitle(String metrics_scaleTitle) {
+        setField(DeviceDetail_diaConst.DIALOG.METRICS_SCALE_TITLE, metrics_scaleTitle);
+    }
+
+    /**
+     * Get the metrics_probeTitle property.
+     *
+     * @return the metrics_probeTitle property
+     */
+    public String getMetrics_probeTitle() {
+        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_PROBE_TITLE);
+    }
+
+    /**
+     * Set the metrics_probeTitle property.
+     *
+     * @param metrics_probeTitle the new value for the metrics_probeTitle property
+     */
+    public void setMetrics_probeTitle(String metrics_probeTitle) {
+        setField(DeviceDetail_diaConst.DIALOG.METRICS_PROBE_TITLE, metrics_probeTitle);
+    }
+
+    /**
+     * Get the metrics_mode property.
+     *
+     * @return the metrics_mode property
+     */
+    public String getMetrics_mode() {
+        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_MODE);
+    }
+
+    /**
+     * Set the metrics_mode property.
+     *
+     * @param metrics_mode the new value for the metrics_mode property
+     */
+    public void setMetrics_mode(String metrics_mode) {
+        setField(DeviceDetail_diaConst.DIALOG.METRICS_MODE, metrics_mode);
+    }
+
     private static final NumberConverter device_updateTime_converter;
     static {
         device_updateTime_converter = new NumberConverter();
@@ -109,114 +217,6 @@ public abstract class DeviceDetail_diaDefaultBean extends FacesDialogBean {
         if ((device_updateTime != null && !device_updateTime.equals(oldVal)) || device_updateTime == null) {
             setField(DeviceDetail_diaConst.DIALOG.DEVICE_UPDATE_TIME, device_updateTime);
         }
-    }
-
-    /**
-     * Get the metrics_probeTitle property.
-     *
-     * @return the metrics_probeTitle property
-     */
-    public String getMetrics_probeTitle() {
-        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_PROBE_TITLE);
-    }
-
-    /**
-     * Set the metrics_probeTitle property.
-     *
-     * @param metrics_probeTitle the new value for the metrics_probeTitle property
-     */
-    public void setMetrics_probeTitle(String metrics_probeTitle) {
-        setField(DeviceDetail_diaConst.DIALOG.METRICS_PROBE_TITLE, metrics_probeTitle);
-    }
-
-    /**
-     * Get the metrics_scaleTitle property.
-     *
-     * @return the metrics_scaleTitle property
-     */
-    public String getMetrics_scaleTitle() {
-        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_SCALE_TITLE);
-    }
-
-    /**
-     * Set the metrics_scaleTitle property.
-     *
-     * @param metrics_scaleTitle the new value for the metrics_scaleTitle property
-     */
-    public void setMetrics_scaleTitle(String metrics_scaleTitle) {
-        setField(DeviceDetail_diaConst.DIALOG.METRICS_SCALE_TITLE, metrics_scaleTitle);
-    }
-
-    /**
-     * Get the metrics_level property.
-     *
-     * @return the metrics_level property
-     */
-    public String getMetrics_level() {
-        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_LEVEL);
-    }
-
-    /**
-     * Set the metrics_level property.
-     *
-     * @param metrics_level the new value for the metrics_level property
-     */
-    public void setMetrics_level(String metrics_level) {
-        setField(DeviceDetail_diaConst.DIALOG.METRICS_LEVEL, metrics_level);
-    }
-
-    /**
-     * Get the metrics_icon property.
-     *
-     * @return the metrics_icon property
-     */
-    public String getMetrics_icon() {
-        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_ICON);
-    }
-
-    /**
-     * Set the metrics_icon property.
-     *
-     * @param metrics_icon the new value for the metrics_icon property
-     */
-    public void setMetrics_icon(String metrics_icon) {
-        setField(DeviceDetail_diaConst.DIALOG.METRICS_ICON, metrics_icon);
-    }
-
-    /**
-     * Get the metrics_title property.
-     *
-     * @return the metrics_title property
-     */
-    public String getMetrics_title() {
-        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_TITLE);
-    }
-
-    /**
-     * Set the metrics_title property.
-     *
-     * @param metrics_title the new value for the metrics_title property
-     */
-    public void setMetrics_title(String metrics_title) {
-        setField(DeviceDetail_diaConst.DIALOG.METRICS_TITLE, metrics_title);
-    }
-
-    /**
-     * Get the metrics_mode property.
-     *
-     * @return the metrics_mode property
-     */
-    public String getMetrics_mode() {
-        return (String) getField(DeviceDetail_diaConst.DIALOG.METRICS_MODE);
-    }
-
-    /**
-     * Set the metrics_mode property.
-     *
-     * @param metrics_mode the new value for the metrics_mode property
-     */
-    public void setMetrics_mode(String metrics_mode) {
-        setField(DeviceDetail_diaConst.DIALOG.METRICS_MODE, metrics_mode);
     }
 
     /**
