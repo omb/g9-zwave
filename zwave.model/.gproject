@@ -3,8 +3,10 @@
 	CaseSensitive="False"
 	DefaultRoleName="True"
 	IncludeOnlyNavigableRoles="True"
+	MinimumVersion="1.12.0"
 	ModelVersion="1.7.0"
 	ProjectType="UI"
+	g9Version="1.13.0.v201506031027"
 	name="">
 	<Builds
 		name="Builds">
@@ -12,7 +14,7 @@
 			name="NoGen"
 		/>
 		<GeneratorSet
-			Generators="ICEfaces,Java Domain,RestClient"
+			Generators="ICEfaces,Java Domain,SmartRest Client"
 			name="Standard Build"
 		/>
 	</Builds>
@@ -78,6 +80,11 @@
 				name="no.g9.support.Numeric"
 			/>
 		</GeneratorTarget>
+		<GeneratorTarget
+			GeneratorTarget="smartREST client"
+			Target="zwave.app"
+			name="SmartRest Client"
+		/>
 	</Generators>
 	<SyncFolder
 		name="SyncFolder">

@@ -22,11 +22,8 @@
 		<ice.version>4.0.0</ice.version>
 		<jsf.version>2.2.7</jsf.version>
 		<jetty.version>9.2.6.v20141205</jetty.version>
-		<jersey.version>2.17</jersey.version>
-		<jaxb.version>2.2.11</jaxb.version>
-		<castor.version>1.3.3</castor.version>
-		<springws.version>2.2.0.RELEASE</springws.version>
-		<eclipselink.version>2.6.0</eclipselink.version>
+		<spring.version>4.1.6.RELEASE</spring.version>
+		<jackson.version>2.5.3</jackson.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -59,69 +56,15 @@
 			<artifactId>apache-jstl</artifactId>
 			<version>${jetty.version}</version>
 		</dependency>
+ 		<dependency>
+   			<groupId>org.springframework</groupId>
+   			<artifactId>spring-web</artifactId>
+   			<version>${spring.version}</version>
+  		</dependency>
 		<dependency>
-			<groupId>org.codehaus.castor</groupId>
-			<artifactId>castor-xml</artifactId>
-			<version>${castor.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-context</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jersey.core</groupId>
-			<artifactId>jersey-client</artifactId>
-			<version>${jersey.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jersey.core</groupId>
-			<artifactId>jersey-server</artifactId>
-			<version>${jersey.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jersey.media</groupId>
-			<artifactId>jersey-media-moxy</artifactId>
-			<version>${jersey.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.glassfish.jersey.ext</groupId>
-			<artifactId>jersey-spring3</artifactId>
-			<version>${jersey.version}</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-core</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-web</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.springframework</groupId>
-					<artifactId>spring-beans</artifactId>
-				</exclusion>
-				<exclusion>
-					<groupId>org.glassfish.hk2</groupId>
-					<artifactId>spring-bridge</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
-		<dependency>
-			<groupId>org.eclipse.persistence</groupId>
-			<artifactId>eclipselink</artifactId>
-			<version>${eclipselink.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>com.sun.xml.bind</groupId>
-			<artifactId>jaxb-impl</artifactId>
-			<version>${jaxb.version}</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.ws</groupId>
-			<artifactId>spring-ws-core</artifactId>
-			<version>${springws.version}</version>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>${jackson.version}</version>
 		</dependency>
 	</dependencies>
 </project>
