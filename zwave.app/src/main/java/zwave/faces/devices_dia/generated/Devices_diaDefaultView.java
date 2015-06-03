@@ -211,6 +211,8 @@ public abstract class Devices_diaDefaultView extends FacesDialogView {
     @Override
     public void initView() {
         setShown(true);
+        setEditable(Devices_diaConst.DIALOG.DEVICE_LIST_STRUCTURE_CHANGED, false);
+        setEditable(Devices_diaConst.DIALOG.DEVICE_LIST_UPDATE_TIME, false);
         addRoleField(Devices_osConst.OS.DEVICE_LIST, Devices_diaConst.DIALOG.DEVICE_LIST_STRUCTURE_CHANGED);
         addRoleField(Devices_osConst.OS.DEVICE_LIST, Devices_diaConst.DIALOG.DEVICE_LIST_UPDATE_TIME);
         addRoleField(Devices_osConst.OS.DEVICES, Devices_diaConst.DIALOG.DEVICES_ID);

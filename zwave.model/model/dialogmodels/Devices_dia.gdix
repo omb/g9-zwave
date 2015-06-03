@@ -65,6 +65,7 @@
 				<VarField
 					AttributeID="G1432712289899"
 					AttributeName="structureChanged"
+					Editable="False"
 					FrameCode="Inherit"
 					RoleId="G1432712289898"
 					RoleName="DeviceList"
@@ -82,10 +83,12 @@
 				<VarField
 					AttributeID="G1432712289900"
 					AttributeName="updateTime"
-					Editable="True"
+					Editable="False"
 					FrameCode="Inherit"
 					RoleId="G1432712289898"
 					RoleName="DeviceList"
+					StyleRefId="G41b5b14c029619"
+					StyleRefName="BlackOnLightGreyNoFrame"
 					TABSequence="True"
 					VarFieldType="Text"
 					id="G1432813062507"

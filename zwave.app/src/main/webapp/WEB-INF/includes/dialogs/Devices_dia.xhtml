@@ -42,6 +42,7 @@
                                                    disabled="${!devices_dia.enabled['Devices_dia_deviceList_structureChanged']}"
                                                    tabindex="2"
                                                    readonly="${!devices_dia.editable['Devices_dia_deviceList_structureChanged']}"
+                                                   onclick="${!devices_dia.editable['Devices_dia_deviceList_structureChanged'] ? 'this.checked=!this.checked;' : ''}"
                                                    value="#{devices_dia.deviceList_structureChanged}"
                                                     />
                         </td><td>
@@ -64,7 +65,7 @@
                       <td style="padding-left: 6px;">
                         <h:inputText maxlength="11" size="11"
                                      id="Devices_dia_deviceList_updateTime"
-                                     styleClass="StandardShadowIn gvaAlignLeft ${devices_dia.shown['Devices_dia_deviceList_updateTime'] ? '' : 'gvaHidden'} ${devices_dia.mandatory['Devices_dia_deviceList_updateTime'] ? 'gvaMandatory' : ''}"
+                                     styleClass="BlackOnLightGreyNoFrame BlackOnLightGreyNoFrame_frame gvaAlignLeft ${devices_dia.shown['Devices_dia_deviceList_updateTime'] ? '' : 'gvaHidden'} ${devices_dia.mandatory['Devices_dia_deviceList_updateTime'] ? 'gvaMandatory' : ''}"
                                      disabled="${!devices_dia.enabled['Devices_dia_deviceList_updateTime']}"
                                      tabindex="3"
                                      readonly="${!devices_dia.editable['Devices_dia_deviceList_updateTime']}"
