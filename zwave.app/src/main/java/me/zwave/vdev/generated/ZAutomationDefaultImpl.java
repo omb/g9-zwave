@@ -2,7 +2,6 @@
 
 package me.zwave.vdev.generated;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -22,7 +21,6 @@ import org.springframework.web.client.RestTemplate;
 public class ZAutomationDefaultImpl implements ZAutomation {
 
 
-	@JsonIgnoreProperties(ignoreUnknown = true)
 	static class GetDevicesDataWrapper {
 		GetDevicesDataWrapper() {
 		}
@@ -39,12 +37,11 @@ public class ZAutomationDefaultImpl implements ZAutomation {
 	public DeviceList getDevices() {
 		RestTemplate rt= getRestTemplate();
 		String serviceUrl= Registry.getRegistry().getG9Property("me.zwave.vdev.zautomation.url");
-		GetDevicesDataWrapper retval = rt.getForObject(serviceUrl+"ZAutomation/api/v1/devices", GetDevicesDataWrapper.class);
+		GetDevicesDataWrapper retval= rt.getForObject(serviceUrl+"ZAutomation/api/v1/devices", GetDevicesDataWrapper.class);
 		return retval.data;
 	}
 
 
-	@JsonIgnoreProperties(ignoreUnknown = true)
 	static class GetChangedDevicesDataWrapper {
 		GetChangedDevicesDataWrapper() {
 		}
@@ -61,12 +58,11 @@ public class ZAutomationDefaultImpl implements ZAutomation {
 	public DeviceList getChangedDevices(int since) {
 		RestTemplate rt= getRestTemplate();
 		String serviceUrl= Registry.getRegistry().getG9Property("me.zwave.vdev.zautomation.url");
-		GetChangedDevicesDataWrapper retval = rt.getForObject(serviceUrl+"ZAutomation/api/v1/devices?since={since}", GetChangedDevicesDataWrapper.class,  since);
+		GetChangedDevicesDataWrapper retval= rt.getForObject(serviceUrl+"ZAutomation/api/v1/devices?since={since}", GetChangedDevicesDataWrapper.class,  since);
 		return retval.data;
 	}
 
 
-	@JsonIgnoreProperties(ignoreUnknown = true)
 	static class GetDeviceDataWrapper {
 		GetDeviceDataWrapper() {
 		}
@@ -83,7 +79,7 @@ public class ZAutomationDefaultImpl implements ZAutomation {
 	public Device getDevice(String deviceId) {
 		RestTemplate rt= getRestTemplate();
 		String serviceUrl= Registry.getRegistry().getG9Property("me.zwave.vdev.zautomation.url");
-		GetDeviceDataWrapper retval = rt.getForObject(serviceUrl+"ZAutomation/api/v1/devices/{deviceId}", GetDeviceDataWrapper.class,  deviceId);
+		GetDeviceDataWrapper retval= rt.getForObject(serviceUrl+"ZAutomation/api/v1/devices/{deviceId}", GetDeviceDataWrapper.class,  deviceId);
 		return retval.data;
 	}
 
@@ -105,6 +101,7 @@ public class ZAutomationDefaultImpl implements ZAutomation {
 		rt.getForObject(serviceUrl+"ZAutomation/api/v1/devices/{deviceId}/command/exact?level={level}", Object.class,  deviceId,  level);
 	}
 
+
 	private RestTemplate getRestTemplate() {
 		ObjectMapper lax = new ObjectMapper().configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 		MappingJackson2HttpMessageConverter c = new MappingJackson2HttpMessageConverter();
@@ -117,5 +114,4 @@ public class ZAutomationDefaultImpl implements ZAutomation {
 		rest.setMessageConverters(list);
 		return rest;
 	}
-
 }
